@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'LxgwWenKai';
+    src: url('/files/LXGWWenKaiScreen.ttf') format('truetype');
+}
+
+body {
+    font-family: 'LXGW WenKai Screen';
+}
