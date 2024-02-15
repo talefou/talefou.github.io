@@ -255,7 +255,7 @@ th {
 }
 @font-face {
   font-family: 'LXGW WenKai Screen';
-  src: url("/font/LXGWWenKaiScreen.ttf");
+  src: url("https://static.xiaozi.cc/font/LXGWWenKaiScreen.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -5472,7 +5472,7 @@ p.p.subtitle:first-child {
 }
 span.p.logo,
 p.p.logo {
-  font-family: "LXGW WenKai Screen", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 span.p.code,
 p.p.code {
