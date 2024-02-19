@@ -1,10 +1,13 @@
 {
-  "version": 3,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" },
-    { "source": "/404", "destination": "/404.html" }
-  ],
+  "version": 2,
   "routes": [
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+      {
+          "handle": "filesystem"
+      },
+      {
+          "src": "/(.*)",
+          "status": 404,
+          "dest": "/404/"
+      }
   ]
 }
