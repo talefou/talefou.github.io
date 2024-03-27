@@ -38,7 +38,7 @@
       <link rel="alternate" href="/atom.xml" title="傅语" type="application/atom+xml">
   <!-- 页面元数据 -->
   <title>你好世界 - 傅语</title>
-  <meta name="keywords" content="随笔,傅语,Volantis,Hexo,Blog,VayFou,TaleFou">
+  <meta name="keywords" content="随笔,傅语,TaleFou,Vayfou,Volantis,Hexo,Blog">
   <meta desc name="description" content="你好世界 - VayFou - 傅语">
   
 <meta property="og:type" content="article">
@@ -217,6 +217,14 @@ button {
     background: rgba(255,255,255,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
 }
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2279,7 +2287,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1711453668056),
+    lastupdate: new Date(1711542638591),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2304,7 +2312,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       message: {"enable":true,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.link","hr","menus.prevNext","hr","menus.darkMode","plugins.articlePage"],"options":{"iconPrefix":"fa-duotone","articleShowLink":false,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left light-blue","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right light-blue","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo light-blue","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up light-blue","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone fa-paste light-blue","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone fa-object-ungroup light-blue","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone fa-cut light-blue","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone fa-copy light-blue","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone fa-search light-blue","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"baiduSearch","name":"百度搜索","icon":"fa-duotone fa-search light-blue","event":"window.open(`https://www.baidu.com/s?wd=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone fa-external-link-square-alt light-blue","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone fa-link light-blue","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-duotone fa-image light-blue","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-duotone fa-images light-blue","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print NEPHRITIS","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open NEPHRITIS","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"comments","name":"留言板","icon":"fa-duotone fa-comment-alt-smile PETERRIVE","link":"/messages/","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-duotone fa-link ALIZARIN","link":"/friends/","group":"link"},{"id":"fcircle","name":"朋友圈","icon":"fa-duotone fa-user-friends PUMPKIN","link":"/fcircle/","group":"link"},{"id":"virus","name":"笔记本","icon":"fa-duotone fa-books EMERALD","link":"/notes/","group":"link"},{"id":"talks","name":"建站史","icon":"fa-duotone fa-history AMETHYST","link":"/history/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-adjust GREENSEA","event":"volantis.dark.toggle()","group":"darkMode"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-duotone fa-angles-left light-blue","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-duotone fa-angles-right light-blue","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.link","hr","menus.prevNext","hr","menus.darkMode","plugins.articlePage"],"options":{"iconPrefix":"fa-duotone","articleShowLink":false,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left light-blue","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right light-blue","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo light-blue","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up light-blue","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone fa-paste light-blue","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone fa-object-ungroup light-blue","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone fa-cut light-blue","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone fa-copy light-blue","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone fa-search light-blue","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"baiduSearch","name":"百度搜索","icon":"fa-duotone fa-search light-blue","event":"window.open(`https://www.baidu.com/s?wd=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone fa-external-link-square-alt light-blue","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone fa-link light-blue","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片","icon":"fa-duotone fa-image light-blue","event":"copyImg","group":"elementImage"},{"id":"googleImg","name":"谷歌识图","icon":"fa-duotone fa-images light-blue","event":"window.open(`https://www.google.com.hk/searchbyimage?image_url=${__link__}`)","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print NEPHRITIS","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open NEPHRITIS","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"comments","name":"留言板","icon":"fa-duotone fa-comment-alt-smile PETERRIVE","link":"/messages/","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-duotone fa-link ALIZARIN","link":"/friends/","group":"link"},{"id":"fcircle","name":"朋友圈","icon":"fa-duotone fa-user-friends PUMPKIN","link":"/fcircle/","group":"link"},{"id":"virus","name":"笔记本","icon":"fa-duotone fa-books EMERALD","link":"/notes/","group":"link"},{"id":"talks","name":"建站史","icon":"fa-duotone fa-history ORANGE","link":"/history/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-adjust CARROT","event":"volantis.dark.toggle()","group":"darkMode"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-duotone fa-angles-left light-blue","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-duotone fa-angles-right light-blue","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
       
     },
     search: {
@@ -2479,7 +2487,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-duotone fa-bars TURQUOISE fa-fw'></i>页面
+                  <i class='fa-duotone fa-bars PUMPKIN fa-fw'></i>页面
                 </a>
                 
                   <ul class="list-v">
@@ -2775,7 +2783,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-duotone fa-bars TURQUOISE fa-fw'></i>页面
+                  <i class='fa-duotone fa-bars PUMPKIN fa-fw'></i>页面
                 </a>
                 
                   <ul class="list-v">
@@ -3057,7 +3065,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="busuanzi_value_page_pv">
+      <span id="twikoo_visitors">
         <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
       </span>
         
@@ -3233,7 +3241,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-  
+
+  <article class="post white-box blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/af7317c9/#comments">
+    </span>
+    <p ct><i class='fa-duotone light-blue fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
 
 
 
@@ -3516,7 +3535,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <a class="vlts-menu fix-cursor-default" id="talks" href="/history/" data-group="link">
-      <i class="fa-duotone fa-history AMETHYST fa-fw"></i>
+      <i class="fa-duotone fa-history ORANGE fa-fw"></i>
       建站史
     </a>
   </li>
@@ -3551,7 +3570,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="darkMode" data-event="volantis.dark.toggle()" data-group="darkMode">
-      <i class="fa-duotone fa-adjust GREENSEA fa-fw"></i>
+      <i class="fa-duotone fa-adjust CARROT fa-fw"></i>
       暗黑模式
     </span>
   </li>
@@ -3893,6 +3912,41 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
+      <script>
+  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function load_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    volantis.js("https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.31/twikoo.min.js", p_twikoo)
+  }
+  function p_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "" || "";
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    twikoo.init(Object.assign(Object.assign({"path":null,"envId":"https://twikoo.xiaozi.cc","placeholder":null,"visitor":true}, {
+      el: '#twikoo_container',
+      path: path,
+      placeholder: placeholder,
+      onCommentLoaded: function() {
+        if(typeof VolantisFancyBox === "undefined") {
+          const checkFancyBox = setInterval(() => {
+            if(typeof VolantisFancyBox === "undefined") return;
+            clearInterval(checkFancyBox);
+            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+          })
+        } else {
+          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+        }
+      }
+    }),pdata.commentConfig))
+  }
+  load_twikoo();
+</script>
+
+    
 
 
 
@@ -4186,7 +4240,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"傅语","url":"https://tale.xiaozi.cc/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://tale.xiaozi.cc/","sameAs":["https://github.com/volantis-x"],"description":"若心有所往，何惧道阻且长。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://tale.xiaozi.cc/","name":"傅语"}},{"@type":"ListItem","position":2,"item":{"@id":"https://tale.xiaozi.cc/categories/随笔/","name":"随笔"}},{"@type":"ListItem","position":3,"item":{"@id":"https://tale.xiaozi.cc/af7317c9/","name":"你好世界"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"傅语","url":"https://tale.xiaozi.cc/","keywords":"傅语,Volantis,Hexo,Blog,VayFou,TaleFou","description":"若心有所往，何惧道阻且长。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://tale.xiaozi.cc/","description":"若心有所往，何惧道阻且长。"},"publisher":{"@type":"Organization","name":"傅语","url":"https://tale.xiaozi.cc/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://tale.xiaozi.cc?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"你好世界","description":"你好世界","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://tale.xiaozi.cc/af7317c9/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://tale.xiaozi.cc/"},"publisher":{"@type":"Organization","name":"傅语","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://tale.xiaozi.cc/af7317c9/","wordCount":0,"datePublished":"2024-03-24T08:29:29.000Z","dateModified":"2024-03-24T08:29:29.000Z","articleSection":"随笔","keywords":"随笔","image":{"@type":"ImageObject","url":"/img/hello-world.jpg","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"傅语","url":"https://tale.xiaozi.cc/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://tale.xiaozi.cc/","sameAs":["https://github.com/volantis-x"],"description":"若心有所往，何惧道阻且长。"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://tale.xiaozi.cc/","name":"傅语"}},{"@type":"ListItem","position":2,"item":{"@id":"https://tale.xiaozi.cc/categories/随笔/","name":"随笔"}},{"@type":"ListItem","position":3,"item":{"@id":"https://tale.xiaozi.cc/af7317c9/","name":"你好世界"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"傅语","url":"https://tale.xiaozi.cc/","keywords":"傅语,TaleFou,Vayfou,Volantis,Hexo,Blog","description":"若心有所往，何惧道阻且长。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://tale.xiaozi.cc/","description":"若心有所往，何惧道阻且长。"},"publisher":{"@type":"Organization","name":"傅语","url":"https://tale.xiaozi.cc/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://tale.xiaozi.cc?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"你好世界","description":"你好世界","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://tale.xiaozi.cc/af7317c9/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://tale.xiaozi.cc/"},"publisher":{"@type":"Organization","name":"傅语","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://tale.xiaozi.cc/af7317c9/","wordCount":0,"datePublished":"2024-03-24T08:29:29.000Z","dateModified":"2024-03-24T08:29:29.000Z","articleSection":"随笔","keywords":"随笔","image":{"@type":"ImageObject","url":"/img/hello-world.jpg","width":1024,"height":768}}]</script>
 
 
 
