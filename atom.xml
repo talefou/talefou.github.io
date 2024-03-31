@@ -3,11 +3,11 @@
   <title>傅语(TaleFou)</title>
   
   <subtitle>学习分享|生活记录</subtitle>
-  <link href="https://tale.xiaozi.cc/atom.xml" rel="self"/>
+  <link href="https://vayfou.cn/atom.xml" rel="self"/>
   
-  <link href="https://tale.xiaozi.cc/"/>
+  <link href="https://vayfou.cn/"/>
   <updated>2024-03-30T06:56:50.000Z</updated>
-  <id>https://tale.xiaozi.cc/</id>
+  <id>https://vayfou.cn/</id>
   
   <author>
     <name>VayFou</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>博客扬帆起航</title>
-    <link href="https://tale.xiaozi.cc/af7317c9/"/>
-    <id>https://tale.xiaozi.cc/af7317c9/</id>
+    <link href="https://vayfou.cn/af7317c9/"/>
+    <id>https://vayfou.cn/af7317c9/</id>
     <published>2024-03-24T08:29:29.000Z</published>
     <updated>2024-03-30T06:56:50.000Z</updated>
     
@@ -30,17 +30,17 @@
     
     
     
-    <category term="随笔" scheme="https://tale.xiaozi.cc/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://vayfou.cn/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-    <category term="随笔" scheme="https://tale.xiaozi.cc/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://vayfou.cn/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>你好2023</title>
-    <link href="https://tale.xiaozi.cc/1006cd9b/"/>
-    <id>https://tale.xiaozi.cc/1006cd9b/</id>
+    <link href="https://vayfou.cn/1006cd9b/"/>
+    <id>https://vayfou.cn/1006cd9b/</id>
     <published>2023-01-01T12:55:38.000Z</published>
     <updated>2023-04-09T03:19:10.000Z</updated>
     
@@ -51,10 +51,10 @@
     
     
     
-    <category term="随笔" scheme="https://tale.xiaozi.cc/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://vayfou.cn/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
-    <category term="随笔" scheme="https://tale.xiaozi.cc/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://vayfou.cn/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
