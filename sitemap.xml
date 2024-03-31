@@ -2,45 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tale.xiaozi.cc/about/</loc>
-    
-    <lastmod>2024-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tale.xiaozi.cc/categories/</loc>
-    
-    <lastmod>2024-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tale.xiaozi.cc/fcircle/</loc>
-    
-    <lastmod>2024-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tale.xiaozi.cc/friends/</loc>
-    
-    <lastmod>2024-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://tale.xiaozi.cc/info/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +13,7 @@
   <url>
     <loc>https://tale.xiaozi.cc/notes/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,7 +22,7 @@
   <url>
     <loc>https://tale.xiaozi.cc/policy/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,7 +31,7 @@
   <url>
     <loc>https://tale.xiaozi.cc/tags/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +40,7 @@
   <url>
     <loc>https://tale.xiaozi.cc/talks/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,7 +49,7 @@
   <url>
     <loc>https://tale.xiaozi.cc/timeline/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,7 +58,43 @@
   <url>
     <loc>https://tale.xiaozi.cc/welcome/</loc>
     
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tale.xiaozi.cc/about/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tale.xiaozi.cc/categories/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tale.xiaozi.cc/fcircle/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tale.xiaozi.cc/friends/</loc>
+    
+    <lastmod>2024-03-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +121,7 @@
 
   <url>
     <loc>https://tale.xiaozi.cc/</loc>
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,7 +129,7 @@
   
   <url>
     <loc>https://tale.xiaozi.cc/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -138,7 +138,7 @@
   
   <url>
     <loc>https://tale.xiaozi.cc/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2024-03-30</lastmod>
+    <lastmod>2024-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
