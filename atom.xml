@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>傅语</title>
+  <title>傅语(TaleFou)</title>
   
-  <subtitle>笔记分享|生活记录</subtitle>
+  <subtitle>学习分享|生活记录</subtitle>
   <link href="https://tale.xiaozi.cc/atom.xml" rel="self"/>
   
   <link href="https://tale.xiaozi.cc/"/>
