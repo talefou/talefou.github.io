@@ -2,8 +2,8 @@
   display: none;
 }
 :root {
-  --color-site-body: #f7f9fe;
-  --color-site-bg: #f7f9fe;
+  --color-site-body: #f9fafb;
+  --color-site-bg: #f9fafb;
   --color-site-inner: #fff;
   --color-site-footer: #666;
   --color-card: #fff;
@@ -939,14 +939,14 @@ button {
   }
 }
 @font-face {
-  font-family: 'LXGW WenKai';
+  font-family: 'LXGW WenKai Screen';
   src: url("");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
-  font-family: 'LXGW WenKai';
+  font-family: 'LXGW WenKai Screen';
   src: url("");
   font-weight: 'normal';
   font-style: 'normal';
