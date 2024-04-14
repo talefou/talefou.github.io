@@ -6,7 +6,7 @@
   <link href="https://vayfou.cn/atom.xml" rel="self"/>
   
   <link href="https://vayfou.cn/"/>
-  <updated>2024-03-30T06:56:50.000Z</updated>
+  <updated>2024-04-14T05:47:49.000Z</updated>
   <id>https://vayfou.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo的探索</title>
+    <link href="https://vayfou.cn/9d3d3152/"/>
+    <id>https://vayfou.cn/9d3d3152/</id>
+    <published>2024-04-14T05:47:49.000Z</published>
+    <updated>2024-04-14T05:47:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Hexo是一款基于Node.js的，快速、简洁且高效的博客框架。具有丰富的主题和插件，具有超快的速度。支持Makedown语法，可以方便快捷地编写博客文章。同时支持node命令，可以一键部署到GitHub Pages, Heroku等其他平台。</p><h2 id="1-环境"><a href="#1-环境" class="headerlink" title="1.环境"></a>1.环境</h2><h3 id="1-1-安装-Node-js-和-npm"><a href="#1-1-安装-Node-js-和-npm" class="headerlink" title="1.1 安装 Node.js 和 npm"></a>1.1 安装 Node.js 和 npm</h3><p>检测是否安装成功：</p><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开终端，输入：</span></span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><h3 id="1-2-安装-Hexo"><a href="#1-2-安装-Hexo" class="headerlink" title="1.2 安装 Hexo"></a>1.2 安装 Hexo</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开终端，输入：</span></span><br><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="2-开始使用"><a href="#2-开始使用" class="headerlink" title="2.开始使用"></a>2.开始使用</h2><h3 id="2-1-Hexo命令"><a href="#2-1-Hexo命令" class="headerlink" title="2.1 Hexo命令"></a>2.1 Hexo命令</h3><p>官方文档：<a href="https://hexo.io/zh-cn/docs/commands/">命令 | Hexo</a></p><ul><li>初始化 <code>hexo init &amp;&amp; npm install</code></li><li>生成静态文件 <code>hexo g</code></li><li>启动本地服务器 <code>hexo s</code></li><li>清理缓存 <code>hexo clean</code></li><li>部署到远程服务器 <code>hexo d</code><br>Hexo目录结构：<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">├── _config.yml       # 站点配置文件</span><br><span class="line">├── .gitignore         # Git忽略文件列表</span><br><span class="line">├── node_modules       # Node.js依赖包</span><br><span class="line">├── package.json       # 项目元数据和依赖</span><br><span class="line">├── package-lock.json  # 依赖版本锁定</span><br><span class="line">├── source             # 内容和资源目录</span><br><span class="line">│   ├── _posts          # 博客文章</span><br><span class="line">│   ├── _drafts         # 草稿</span><br><span class="line">│   ├── _pages          # 静态页面</span><br><span class="line">│   └── assets           # 静态资源（图片、样式等）</span><br><span class="line">└── themes              # 主题目录</span><br></pre></td></tr></table></figure></li></ul><h3 id="2-2-1-网站配置"><a href="#2-2-1-网站配置" class="headerlink" title="2.2.1 网站配置"></a>2.2.1 网站配置</h3><p>网站配置文件：<code>_config.yml</code>，官方文档：<a href="https://hexo.io/zh-cn/docs/configuration/">配置 | Hexo</a></p><h3 id="2-2-2-主题配置"><a href="#2-2-2-主题配置" class="headerlink" title="2.2.2 主题配置"></a>2.2.2 主题配置</h3><ol><li>安装主题，官方收录主题：<a href="https://hexo.io/themes/">主题 | Hexo</a><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在网站的根目录下，执行：</span></span><br><span class="line">git clone git@github.com:xxxx/xxxx theme/xxxx</span><br></pre></td></tr></table></figure>修改<code>_config.yml</code>网站配置文件<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure></li><li>安装插件，官方收录插件：<a href="https://hexo.io/plugins/">插件 | Hexo</a></li></ol><h2 id="3-推送"><a href="#3-推送" class="headerlink" title="3.推送"></a>3.推送</h2><ol><li>安装推送插件<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开终端，输入</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li><li>修改<code>_config</code>网站配置<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:xxxx/xxxxx</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure></li></ol><h2 id="4-进阶"><a href="#4-进阶" class="headerlink" title="4.进阶"></a>4.进阶</h2><p>上述推送方法会将生成的静态文件直接推送至代码仓库中，因此每次更改网站内容时，都需在本地环境进行。</p><p>因GitHub等代码托管平台无法直接处理Hexo生成的静态文件，遂可将本地Hexo根目录文件推送至仓库，并参考<a href="https://xaoxuu.com/blog/20221126/#GitHub-Actions-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2">GitHub Actions 自动化部署</a>完成处理。</p><p>注：上传前若无<code>.gitignore</code>文件，则需新建一个以跳过部分内容：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure><p>最后可通过下列及其他方式完成Hexo在线编辑：</p><ul><li><a href="https://github.com/codespaces/">GitHub Codespaces</a></li><li><a href="https://www.oplog.cn/qexo/">Qexo</a></li><li><a href="https://hexoplusplus.js.org/">HexoPlusPlus</a></li><li>……</li></ul><h2 id="5-部署"><a href="#5-部署" class="headerlink" title="5.部署"></a>5.部署</h2><ul><li>GitHub Pages</li><li>Vercel</li><li>CloudFlare</li><li>Netlify</li><li>……<br>通过将生成的静态文件推送到代码库，并结合上述部署工具，即可将网站内容发布至网络。</li></ul>]]></content>
+    
+    
+    <summary type="html">阐述了Hexo的搭建与使用方法。</summary>
+    
+    
+    
+    <category term="教程" scheme="https://vayfou.cn/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://vayfou.cn/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>博客扬帆起航</title>
