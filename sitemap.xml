@@ -2,69 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vayfou.cn/about/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/categories/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/fcircle/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/friends/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/info/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/notes/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/openai-proxy/</loc>
-    
-    <lastmod>2024-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/policy/</loc>
     
     <lastmod>2024-04-15</lastmod>
@@ -102,6 +39,69 @@
   
   <url>
     <loc>https://vayfou.cn/welcome/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/info/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/notes/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/openai-proxy/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/about/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/categories/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/fcircle/</loc>
+    
+    <lastmod>2024-04-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/friends/</loc>
     
     <lastmod>2024-04-15</lastmod>
     
