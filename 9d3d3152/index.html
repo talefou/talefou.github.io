@@ -2284,7 +2284,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1713189984650),
+    lastupdate: new Date(1713588724011),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2493,11 +2493,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/atom.xml" title="RSS订阅"
+                href="/atom/" title="RSS订阅"
                   
                   
                   
-                    active-action="action-atomxml"
+                    active-action="action-atom"
                   >
                   <i class='fa-duotone fa-rss PETERRIVE fa-fw'></i>RSS订阅
                 </a>
@@ -2842,11 +2842,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/atom.xml" title="RSS订阅"
+                href="/atom/" title="RSS订阅"
                   
                   
                   
-                    active-action="action-atomxml"
+                    active-action="action-atom"
                   >
                   <i class='fa-duotone fa-rss PETERRIVE fa-fw'></i>RSS订阅
                 </a>
@@ -3144,7 +3144,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：619 字</p>
+      <p>字数：620 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -3200,19 +3200,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>清理缓存 <code>hexo clean</code></li>
 <li>部署到远程服务器 <code>hexo d</code><br>Hexo目录结构：<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">├── _config.yml       # 站点配置文件</span><br><span class="line">├── .gitignore         # Git忽略文件列表</span><br><span class="line">├── node_modules       # Node.js依赖包</span><br><span class="line">├── package.json       # 项目元数据和依赖</span><br><span class="line">├── package-lock.json  # 依赖版本锁定</span><br><span class="line">├── source             # 内容和资源目录</span><br><span class="line">│   ├── _posts          # 博客文章</span><br><span class="line">│   ├── _drafts         # 草稿</span><br><span class="line">│   ├── _pages          # 静态页面</span><br><span class="line">│   └── assets           # 静态资源（图片、样式等）</span><br><span class="line">└── themes              # 主题目录</span><br></pre></td></tr></table></figure></li>
 </ul>
-<h3 id="2-2-1-网站配置"><a href="#2-2-1-网站配置" class="headerlink" title="2.2.1 网站配置"></a>2.2.1 网站配置</h3><p>网站配置文件：<code>_config.yml</code>，官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration/">配置 | Hexo</a></p>
+<h3 id="2-2-1-网站配置"><a href="#2-2-1-网站配置" class="headerlink" title="2.2.1 网站配置"></a>2.2.1 网站配置</h3><p>网站配置文件：<code>_config.yml</code> ，官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration/">配置 | Hexo</a></p>
 <h3 id="2-2-2-主题配置"><a href="#2-2-2-主题配置" class="headerlink" title="2.2.2 主题配置"></a>2.2.2 主题配置</h3><ol>
 <li>安装主题，官方收录主题：<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题 | Hexo</a><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在网站的根目录下，执行：</span></span><br><span class="line">git clone git@github.com:xxxx/xxxx theme/xxxx</span><br></pre></td></tr></table></figure>
-修改<code>_config.yml</code>网站配置文件<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure></li>
+修改 <code>_config.yml</code> 网站配置文件</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">xxxx</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
 <li>安装插件，官方收录插件：<a target="_blank" rel="noopener" href="https://hexo.io/plugins/">插件 | Hexo</a></li>
 </ol>
 <h2 id="3-推送"><a href="#3-推送" class="headerlink" title="3.推送"></a>3.推送</h2><ol>
 <li>安装推送插件<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开终端，输入</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li>修改<code>_config.yml</code>网站配置<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:xxxx/xxxxx</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure></li>
+<li>修改 <code>_config.yml</code> 网站配置<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:xxxx/xxxxx</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="4-进阶玩法"><a href="#4-进阶玩法" class="headerlink" title="4.进阶玩法"></a>4.进阶玩法</h2><p>上述推送方法会将生成的静态文件直接推送至代码仓库中，因此每次更改网站内容时，都需在本地环境进行。</p>
 <p>因GitHub等代码托管平台无法直接处理Hexo生成的静态文件，遂可将本地Hexo根目录文件推送至仓库，并参考<a target="_blank" rel="noopener" href="https://xaoxuu.com/blog/20221126/#GitHub-Actions-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2">GitHub Actions 自动化部署</a>完成处理。</p>
-<p>注：上传前若无<code>.gitignore</code>文件，则需新建一个以跳过部分内容：</p>
+<p>注：上传前若无 <code>.gitignore</code> 文件，则需新建一个以跳过部分内容：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
 <p>最后可通过下列及其他方式完成Hexo在线编辑：</p>
 <ul>
@@ -3378,7 +3381,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='next' href='/af7317c9/'>
           <p class='title'>博客扬帆起航<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>在远去的2022年，我心中那份对于博客世界的狂热悄然萌生，随之而来的是一股不可抑制的探索欲望。经历了无数次的摸索与决断，我最终将我的足迹定格在了Hexo的世界中。在这一过程中，我遇到了众多的主题...</p>
+          <p class='content'>在远去的2022年，我心中那份对于博客世界的狂热悄然萌生，随之而来的是一股不可抑制的探索欲望。经历了无数次的摸索与决断，我最终将我的足迹定格在了 Hexo 的世界中。在这一过程中，我遇到了众多的...</p>
         </a>
       
     </div>
