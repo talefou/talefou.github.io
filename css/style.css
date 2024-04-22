@@ -8381,6 +8381,11 @@ table a:not([class]):hover,
     -webkit-border-radius: 0;
   }
 }
+#l_main .article .headimg-div {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
 @media screen and (max-width: 560px) {
   .footerMax560 {
     display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
