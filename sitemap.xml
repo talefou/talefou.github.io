@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vayfou.cn/tags/</loc>
+    
+    <lastmod>2024-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/welcome/</loc>
     
     <lastmod>2024-04-23</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/categories/</loc>
+    <loc>https://vayfou.cn/page/timeline/</loc>
     
     <lastmod>2024-04-23</lastmod>
     
@@ -20,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/</loc>
+    <loc>https://vayfou.cn/categories/</loc>
     
     <lastmod>2024-04-23</lastmod>
     
@@ -110,15 +119,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/timeline/</loc>
-    
-    <lastmod>2024-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/9d3d3152/</loc>
     
     <lastmod>2024-04-21</lastmod>
@@ -192,21 +192,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/Record/</loc>
-    <lastmod>2024-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/tags/CloudFlare/</loc>
-    <lastmod>2024-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/tags/Vercel/</loc>
     <lastmod>2024-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
