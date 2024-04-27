@@ -2286,7 +2286,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1714145143217),
+    lastupdate: new Date(1714189488797),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2364,7 +2364,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           
           
-            VayFou
+            VayFou <sup style="color:#ff9800">alpha</sup>
           
         </a>
       
@@ -2533,7 +2533,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-duotone fa-pencil-alt ALIZARIN fa-fw'></i>Life记录
+                  <i class='fa-duotone fa-pencil-alt ORANGE fa-fw'></i>Life记录
                 </a>
                 
                   <ul class="list-v">
@@ -2935,7 +2935,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-duotone fa-pencil-alt ALIZARIN fa-fw'></i>Life记录
+                  <i class='fa-duotone fa-pencil-alt ORANGE fa-fw'></i>Life记录
                 </a>
                 
                   <ul class="list-v">
@@ -3232,7 +3232,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：665 字</p>
+      <p>字数：664 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -3300,11 +3300,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>注：需先将域名解析至 Vercel 提供的默认 DNS 服务器，以防止 SSL 证书配置失败的问题。</strong></p>
 <h2 id="网站配置"><a href="#网站配置" class="headerlink" title="网站配置"></a>网站配置</h2><p>通过 CloudFlare 实现 CDN加速 &#x2F; DDoS 防御 &#x2F; 访问限制 &#x2F; ······</p>
 <h3 id="1-CDN-加速"><a href="#1-CDN-加速" class="headerlink" title="1.CDN 加速"></a>1.CDN 加速</h3><p>打开 <code>DNS</code> - <code>记录</code> ，打开 <code>橙云</code> 以开启（默认状态应为开启）。</p>
-<p><strong>注：因 CloudFlare 服务器均不在大陆，所以速度效果也许不会太佳，开启后若感觉后速度明显降低，可暂时进行关闭，继续使用 Vercel 提供的默认 DNS 服务器。</strong></p>
+<p><strong>注：因 CloudFlare 服务器均不在大陆，所以加速效果也许不会太好，开启后若感觉后速度明显降低，则可暂时进行关闭，继续使用 Vercel 提供的默认 DNS 服务器。</strong></p>
 <h3 id="2-DDOS-防御"><a href="#2-DDOS-防御" class="headerlink" title="2.DDOS 防御"></a>2.DDOS 防御</h3><p>打开 <code>安全性</code> - <code>DDoS</code> ，点击 <code>部署DDoS替代</code> ：</p>
 <p><img src="/assets/post-img/@d342eda4-7.png" class="lazyload" data-srcset="/assets/post-img/@d342eda4-7.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="CloudFlare-DDos"></p>
 <p>配置如下：</p>
-<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">替代名称：ddos</span><br><span class="line">规则集操作：组织</span><br><span class="line">规则集敏感度：高</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">替代名称：ddos</span><br><span class="line">规则集操作：阻止</span><br><span class="line">规则集敏感度：高</span><br></pre></td></tr></table></figure>
 
 <p><img src="/assets/post-img/@d342eda4-8.png" class="lazyload" data-srcset="/assets/post-img/@d342eda4-8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="CloudFlare-DDos"></p>
 <h3 id="3-速度限制"><a href="#3-速度限制" class="headerlink" title="3.速度限制"></a>3.速度限制</h3><p>打开 <code>安全性</code> - <code>WAF</code> - <code>速度限制规则</code> ，点击创建规则：</p>
@@ -3315,7 +3315,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>打开 <code>SSL/TLS</code> - <code>概述</code> ， 将加密模式设置为 <code>完全</code> 即可。</p>
 <p><img src="/assets/post-img/@d342eda4-10.png" class="lazyload" data-srcset="/assets/post-img/@d342eda4-10.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="CloudFlare-SSL/TLS"></p>
 <p>若设置完成后，依然提示，则可暂时将 DNS 的 <code>橙云</code> 关闭。</p>
-<h3 id="5-Important-重点"><a href="#5-Important-重点" class="headerlink" title="5.Important 重点"></a>5.Important 重点</h3><p><strong>注：上述所有操作完成后，需在 <code>缓存</code> - <code>配置</code> 页面，点击 <code>清除所有内容</code> 以清除缓存。</strong></p>
+<h3 id="5-注意"><a href="#5-注意" class="headerlink" title="5.注意"></a>5.注意</h3><p>上述所有操作完成后，需在 <code>缓存</code> - <code>配置</code> 页面，点击 <code>清除所有内容</code> 以清除缓存。</p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>完结撒花~🎉</p>
 <p><img src="https://static.vayfou.cn/img/screenshot.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/screenshot.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog-Home"></p>
 
@@ -3485,9 +3485,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <h2>VayFou</h2>
         
-        
-          <p>人间忽晚，山河已秋。</p>
-
         
         
       </div>
@@ -3661,7 +3658,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-04-26 日</div>
+          <div id="last-update-show">2024-04-27 日</div>
         </div>
       
     </div>
@@ -3688,7 +3685,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F"><span class="toc-text">部署方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-GitHub-%E5%AD%98%E5%82%A8"><span class="toc-text">1.GitHub 存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Vercel-%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2"><span class="toc-text">2.Vercel 项目部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-CloudFlare-DNS-CDN"><span class="toc-text">3.CloudFlare DNS &#x2F; CDN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE"><span class="toc-text">网站配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-CDN-%E5%8A%A0%E9%80%9F"><span class="toc-text">1.CDN 加速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-DDOS-%E9%98%B2%E5%BE%A1"><span class="toc-text">2.DDOS 防御</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%9F%E5%BA%A6%E9%99%90%E5%88%B6"><span class="toc-text">3.速度限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Error-%E8%A7%A3%E5%86%B3"><span class="toc-text">4.Error 解决</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Important-%E9%87%8D%E7%82%B9"><span class="toc-text">5.Important 重点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F"><span class="toc-text">部署方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-GitHub-%E5%AD%98%E5%82%A8"><span class="toc-text">1.GitHub 存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Vercel-%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2"><span class="toc-text">2.Vercel 项目部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-CloudFlare-DNS-CDN"><span class="toc-text">3.CloudFlare DNS &#x2F; CDN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE"><span class="toc-text">网站配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-CDN-%E5%8A%A0%E9%80%9F"><span class="toc-text">1.CDN 加速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-DDOS-%E9%98%B2%E5%BE%A1"><span class="toc-text">2.DDOS 防御</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%80%9F%E5%BA%A6%E9%99%90%E5%88%B6"><span class="toc-text">3.速度限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Error-%E8%A7%A3%E5%86%B3"><span class="toc-text">4.Error 解决</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%B3%A8%E6%84%8F"><span class="toc-text">5.注意</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol>
   </div>
 </section>
 
