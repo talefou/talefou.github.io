@@ -8618,6 +8618,12 @@ a .bb_spoiler,
 .comment-policy .content .comment-policy-link {
   font-size: 14px;
 }
+table:not(figure table) {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: table !important;
+  margin: auto;
+}
 @-moz-keyframes content-fadeIn {
   0% {
     opacity: 0;

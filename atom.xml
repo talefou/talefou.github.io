@@ -6,7 +6,7 @@
   <link href="https://vayfou.cn/atom.xml" rel="self"/>
   
   <link href="https://vayfou.cn/"/>
-  <updated>2024-04-26T14:55:04.000Z</updated>
+  <updated>2024-05-05T04:37:35.159Z</updated>
   <id>https://vayfou.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>资源分享</title>
+    <link href="https://vayfou.cn/eb44505a/"/>
+    <id>https://vayfou.cn/eb44505a/</id>
+    <published>2024-05-05T04:37:35.159Z</published>
+    <updated>2024-05-05T04:37:35.159Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>分享一些资源，结尾附下载链接（仅适用于 Windows 系统）。</p><h2 id="资源链接"><a href="#资源链接" class="headerlink" title="资源链接"></a>资源链接</h2><div class="tag link"><a class="link-card" title="Git" href="https://git-scm.com"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Git</p><p class="url">https://git-scm.com</p></div></a></div><div class="tag link"><a class="link-card" title="Node" href="https://nodejs.org"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Node</p><p class="url">https://nodejs.org</p></div></a></div><div class="tag link"><a class="link-card" title="VSCode" href="https://code.visualstudio.com"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">VSCode</p><p class="url">https://code.visualstudio.com</p></div></a></div><div class="tag link"><a class="link-card" title="Typora" href="https://typora.com"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Typora</p><p class="url">https://typora.com</p></div></a></div><div class="tag link"><a class="link-card" title="Notepad++" href="https://notepad-plus-plus.org"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Notepad++</p><p class="url">https://notepad-plus-plus.org</p></div></a></div><div class="tag link"><a class="link-card" title="Motrix" href="https://motrix.app"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Motrix</p><p class="url">https://motrix.app</p></div></a></div><div class="tag link"><a class="link-card" title="Clash" href="https://clashcn.com"><div class="left"><img src="https://static.vayfou.cn/img/chrome.png" class="lazyload" data-srcset="https://static.vayfou.cn/img/chrome.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">Clash</p><p class="url">https://clashcn.com</p></div></a></div><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>因大部分资源下载速度较慢，所以这里提供加速下载链接。</p><table><thead><tr><th align="center">名称</th><th align="center">介绍</th><th align="center">链接</th></tr></thead><tbody><tr><td align="center">Git</td><td align="center">分布式版本控制系统</td><td align="center"><a href="https://resource.vayfou.cn/Git/Git-2.45.0-64-bit.zip">下载</a></td></tr><tr><td align="center">Node</td><td align="center">JavaScript运行环境</td><td align="center"><a href="https://resource.vayfou.cn/node-v20.12.2-x64.zip">下载</a></td></tr><tr><td align="center">VSCode</td><td align="center">代码编辑器</td><td align="center"><a href="https://resource.vayfou.cn/VSCode/VSCodeUserSetup-x64-1.89.0.zip">下载</a></td></tr><tr><td align="center">Typora</td><td align="center">Markdown编辑器</td><td align="center"><a href="https://resource.vayfou.cn/Typora/typora-setup-x64_0.9.96.zip">下载</a></td></tr><tr><td align="center">Notepad++</td><td align="center">文本编辑器</td><td align="center"><a href="https://resource.vayfou.cn/NPP/npp.8.6.2.Installer.x64.zip">下载</a></td></tr><tr><td align="center">Motrix</td><td align="center">下载工具</td><td align="center"><a href="https://resource.vayfou.cn/Motrix/Motrix-Setup-1.8.19.zip">下载</a></td></tr><tr><td align="center">Clash</td><td align="center">代理工具</td><td align="center"><a href="https://resource.vayfou.cn/Clash/Clash.for.Windows.Setup.0.20.30.zip">下载</a></td></tr></tbody></table><p>可以在 <a href="https://github.com/TaleFou/Static">TaleFou&#x2F;resource</a> 找到源文件，其中还包括了部分资源的主题&#x2F;插件。</p><div class="note warning"><p>不确定为最新版本！</p></div>]]></content>
+    
+    
+    <summary type="html">分享一些资源，结尾附下载链接（仅适用于 Windows 系统）。</summary>
+    
+    
+    
+    <category term="资料" scheme="https://vayfou.cn/categories/%E8%B5%84%E6%96%99/"/>
+    
+    
+    <category term="resource" scheme="https://vayfou.cn/tags/resource/"/>
+    
+  </entry>
   
   <entry>
     <title>本站部署方式记录</title>
