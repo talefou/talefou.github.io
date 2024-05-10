@@ -59,8 +59,8 @@
   display: none;
 }
 :root {
-  --color-site-body: #f8f8f8;
-  --color-site-bg: #f8f8f8;
+  --color-site-body: #f9fafb;
+  --color-site-bg: #f9fafb;
   --color-site-inner: #fff;
   --color-site-footer: #666;
   --color-card: #fff;
@@ -2286,7 +2286,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1715269713761),
+    lastupdate: new Date(1715341550727),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2308,10 +2308,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       }
     },
     plugins: {
-      message: {"enable":false,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
+      message: {"enable":true,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.link","hr","menus.prevNext","hr","menus.darkMode","plugins.articlePage"],"options":{"iconPrefix":"fa-duotone","articleShowLink":false,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left light-blue","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right light-blue","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo light-blue","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-duotone fa-arrow-up light-blue","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone fa-paste light-blue","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone fa-object-ungroup light-blue","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone fa-cut light-blue","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone fa-copy light-blue","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone fa-search light-blue","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"baiduSearch","name":"百度搜索","icon":"fa-duotone fa-search light-blue","event":"window.open(`https://www.baidu.com/s?wd=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone fa-external-link-square-alt light-blue","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone fa-link light-blue","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片文件","icon":"fa-duotone fa-image light-blue","event":"copyImg","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open TURQUOISE","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"comments","name":"我的朋友们","icon":"fa-duotone fa-link AMETHYST","link":"/page/friends/","group":"link"},{"id":"friends","name":"文章归档","icon":"fa-duotone fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"fcircle","name":"文章分类","icon":"fa-duotone fa-folder-open ALIZARIN","link":"/categories/","group":"link"},{"id":"virus","name":"关于我","icon":"fa-duotone fa-gingerbread-man WISTERIA","link":"/page/about/","group":"link"},{"id":"talks","name":"留言板","icon":"fa-duotone fa-object-group ALIZARIN","link":"/page/info/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-duotone fa-angles-left light-blue","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-duotone fa-angles-right light-blue","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.prevNext","hr","menus.link","hr","menus.darkMode","plugins.articlePage"],"options":{"iconPrefix":"fa-duotone","articleShowLink":true,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-duotone fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-duotone fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-duotone fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到首页","icon":"fa-duotone fa-home PETERRIVE","link":"/","group":"navigation"}],"inputBox":[{"id":"copyPaste","name":"粘贴文本","icon":"fa-duotone fa-paste PETERRIVE","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-duotone fa-object-ungroup PETERRIVE","event":"copyAll","group":"inputBox"},{"id":"copyCut","name":"剪切文本","icon":"fa-duotone fa-cut PETERRIVE","event":"copyCut","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-duotone fa-copy PETERRIVE","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-duotone fa-search PETERRIVE","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"baiduSearch","name":"百度搜索","icon":"fa-duotone fa-search PETERRIVE","event":"window.open(`https://www.baidu.com/s?wd=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-duotone fa-external-link-square-alt PETERRIVE","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-duotone fa-link PETERRIVE","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片文件","icon":"fa-duotone fa-image PETERRIVE","event":"copyImg","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-duotone fa-print TURQUOISE","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-duotone fa-book-open EMERALD","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"talks","name":"留言板","icon":"fa-duotone fa-object-group PETERRIVE","link":"/page/info/","group":"link"},{"id":"comments","name":"我的朋友们","icon":"fa-duotone fa-link AMETHYST","link":"/page/friends/","group":"link"},{"id":"friends","name":"文章归档","icon":"fa-duotone fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"fcircle","name":"文章分类","icon":"fa-duotone fa-folder-open PETERRIVE","link":"/categories/","group":"link"},{"id":"virus","name":"关于我","icon":"fa-duotone fa-gingerbread-man WISTERIA","link":"/page/about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-duotone fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-duotone fa-angles-left PETERRIVE","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-duotone fa-angles-right PETERRIVE","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
       
     },
     search: {
@@ -2658,13 +2658,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/about/" title="关于"
+                href="/page/about/" title="关于我"
                   
                   
                   
                     active-action="action-pageabout"
                   >
-                  <i class='fa-duotone fa-info-circle ORANGE fa-fw'></i>关于
+                  <i class='fa-duotone fa-info-circle ORANGE fa-fw'></i>关于我
                 </a>
                 
               </li>
@@ -2675,13 +2675,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/friends/" title="友链"
+                href="/page/friends/" title="朋友们"
                   
                   
                   
                     active-action="action-pagefriends"
                   >
-                  <i class='fa-duotone fa-link ALIZARIN fa-fw'></i>友链
+                  <i class='fa-duotone fa-link ALIZARIN fa-fw'></i>朋友们
                 </a>
                 
               </li>
@@ -2732,7 +2732,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-pageinfo"
                   >
-                  <i class='fa-duotone fa-comment-alt-smile NEPHRITIS fa-fw'></i>留言板
+                  <i class='fa-duotone fa-object-group NEPHRITIS fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2749,7 +2749,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-duotone fa-adjust CARROT fa-fw'></i>暗黑模式
+                  <i class='fa-duotone fa-eclipse-alt CARROT fa-fw'></i>暗黑模式
                 </a>
               <li>
             
@@ -3064,13 +3064,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/about/" title="关于"
+                href="/page/about/" title="关于我"
                   
                   
                   
                     active-action="action-pageabout"
                   >
-                  <i class='fa-duotone fa-info-circle ORANGE fa-fw'></i>关于
+                  <i class='fa-duotone fa-info-circle ORANGE fa-fw'></i>关于我
                 </a>
                 
               </li>
@@ -3081,13 +3081,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/friends/" title="友链"
+                href="/page/friends/" title="朋友们"
                   
                   
                   
                     active-action="action-pagefriends"
                   >
-                  <i class='fa-duotone fa-link ALIZARIN fa-fw'></i>友链
+                  <i class='fa-duotone fa-link ALIZARIN fa-fw'></i>朋友们
                 </a>
                 
               </li>
@@ -3138,7 +3138,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-pageinfo"
                   >
-                  <i class='fa-duotone fa-comment-alt-smile NEPHRITIS fa-fw'></i>留言板
+                  <i class='fa-duotone fa-object-group NEPHRITIS fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -3155,7 +3155,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-duotone fa-adjust CARROT fa-fw'></i>暗黑模式
+                  <i class='fa-duotone fa-eclipse-alt CARROT fa-fw'></i>暗黑模式
                 </a>
               <li>
             
@@ -3520,7 +3520,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           active-action="action-pageinfo">
           
-            <i class="fa-duotone fa-comment-alt-smile PETERRIVE fa-fw" aria-hidden="true"></i>
+            <i class="fa-duotone fa-object-group PETERRIVE fa-fw" aria-hidden="true"></i>
           
           留言板
         </a>
@@ -3645,7 +3645,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-05-09 日</div>
+          <div id="last-update-show">2024-05-10 日</div>
         </div>
       
     </div>
@@ -3741,19 +3741,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <li class='navigation menuNavigation-Content'>
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left light-blue fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.back()"><i class="fa-duotone fa-arrow-left PETERRIVE fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right light-blue fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="history.forward()"><i class="fa-duotone fa-arrow-right PETERRIVE fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo light-blue fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" onclick="window.location.reload()"><i class="fa-duotone fa-redo PETERRIVE fa-fw"></i></a>
 
 
 
-    <a class="nav icon-only fix-cursor-default" onclick="VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)"><i class="fa-duotone fa-arrow-up light-blue fa-fw"></i></a>
+    <a class="nav icon-only fix-cursor-default" href="/"><i class="fa-duotone fa-home PETERRIVE fa-fw"></i></a>
 
 
   </li>
@@ -3765,7 +3765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyPaste" data-event="copyPaste" data-group="inputBox">
-      <i class="fa-duotone fa-paste light-blue fa-fw"></i>
+      <i class="fa-duotone fa-paste PETERRIVE fa-fw"></i>
       粘贴文本
     </span>
   </li>
@@ -3774,7 +3774,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyAll" data-event="copyAll" data-group="inputBox">
-      <i class="fa-duotone fa-object-ungroup light-blue fa-fw"></i>
+      <i class="fa-duotone fa-object-ungroup PETERRIVE fa-fw"></i>
       全选文本
     </span>
   </li>
@@ -3783,7 +3783,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyCut" data-event="copyCut" data-group="inputBox">
-      <i class="fa-duotone fa-cut light-blue fa-fw"></i>
+      <i class="fa-duotone fa-cut PETERRIVE fa-fw"></i>
       剪切文本
     </span>
   </li>
@@ -3792,7 +3792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyText" data-event="copyText" data-group="seletctText">
-      <i class="fa-duotone fa-copy light-blue fa-fw"></i>
+      <i class="fa-duotone fa-copy PETERRIVE fa-fw"></i>
       复制文本
     </span>
   </li>
@@ -3801,7 +3801,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="searchWord" data-event="OpenSearch(__text__)" data-group="seletctText">
-      <i class="fa-duotone fa-search light-blue fa-fw"></i>
+      <i class="fa-duotone fa-search PETERRIVE fa-fw"></i>
       站内搜索
     </span>
   </li>
@@ -3810,7 +3810,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="baiduSearch" data-event="window.open(`https://www.baidu.com/s?wd=${__text__}`)" data-group="seletctText">
-      <i class="fa-duotone fa-search light-blue fa-fw"></i>
+      <i class="fa-duotone fa-search PETERRIVE fa-fw"></i>
       百度搜索
     </span>
   </li>
@@ -3819,7 +3819,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="openTab" data-event="window.open(__link__)" data-group="elementCheck">
-      <i class="fa-duotone fa-external-link-square-alt light-blue fa-fw"></i>
+      <i class="fa-duotone fa-external-link-square-alt PETERRIVE fa-fw"></i>
       新标签页打开
     </span>
   </li>
@@ -3828,7 +3828,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyLink" data-event="copyLink" data-group="elementCheck">
-      <i class="fa-duotone fa-link light-blue fa-fw"></i>
+      <i class="fa-duotone fa-link PETERRIVE fa-fw"></i>
       复制链接地址
     </span>
   </li>
@@ -3837,7 +3837,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="copyImg" data-event="copyImg" data-group="elementImage">
-      <i class="fa-duotone fa-image light-blue fa-fw"></i>
+      <i class="fa-duotone fa-image PETERRIVE fa-fw"></i>
       复制图片文件
     </span>
   </li>
@@ -3845,6 +3845,37 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <hr class="menuLoad-Content" >
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="prev" data-event="volantis.rightmenu.jump('prev')" data-group="prevNext">
+      <i class="fa-duotone fa-angles-left PETERRIVE fa-fw"></i>
+      查看上一篇
+    </span>
+  </li>
+
+
+
+  <li class="menuLoad-Content">
+    <span class="vlts-menu fix-cursor-default event" id="next" data-event="volantis.rightmenu.jump('next')" data-group="prevNext">
+      <i class="fa-duotone fa-angles-right PETERRIVE fa-fw"></i>
+      查看下一篇
+    </span>
+  </li>
+
+
+
+    <hr class="menuLoad-Content" >
+
+
+
+  <li class="menuLoad-Content">
+    <a class="vlts-menu fix-cursor-default" id="talks" href="/page/info/" data-group="link">
+      <i class="fa-duotone fa-object-group PETERRIVE fa-fw"></i>
+      留言板
+    </a>
+  </li>
 
 
 
@@ -3868,7 +3899,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <a class="vlts-menu fix-cursor-default" id="fcircle" href="/categories/" data-group="link">
-      <i class="fa-duotone fa-folder-open ALIZARIN fa-fw"></i>
+      <i class="fa-duotone fa-folder-open PETERRIVE fa-fw"></i>
       文章分类
     </a>
   </li>
@@ -3880,37 +3911,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-duotone fa-gingerbread-man WISTERIA fa-fw"></i>
       关于我
     </a>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <a class="vlts-menu fix-cursor-default" id="talks" href="/page/info/" data-group="link">
-      <i class="fa-duotone fa-object-group ALIZARIN fa-fw"></i>
-      留言板
-    </a>
-  </li>
-
-
-
-    <hr class="menuLoad-Content" >
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="prev" data-event="volantis.rightmenu.jump('prev')" data-group="prevNext">
-      <i class="fa-duotone fa-angles-left light-blue fa-fw"></i>
-      查看上一篇
-    </span>
-  </li>
-
-
-
-  <li class="menuLoad-Content">
-    <span class="vlts-menu fix-cursor-default event" id="next" data-event="volantis.rightmenu.jump('next')" data-group="prevNext">
-      <i class="fa-duotone fa-angles-right light-blue fa-fw"></i>
-      查看下一篇
-    </span>
   </li>
 
 
@@ -3939,7 +3939,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <span class="vlts-menu fix-cursor-default event" id="readMode" data-event="readMode" data-group="articlePage">
-      <i class="fa-duotone fa-book-open TURQUOISE fa-fw"></i>
+      <i class="fa-duotone fa-book-open EMERALD fa-fw"></i>
       阅读模式
     </span>
   </li>
@@ -4019,18 +4019,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   RightMenusFunction['prev'] = () => {volantis.rightmenu.jump('prev')}
 
 
@@ -4038,6 +4026,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   RightMenusFunction['next'] = () => {volantis.rightmenu.jump('next')}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
