@@ -5,7 +5,7 @@ backend:
   branch: main
   identity: TaleFou
   auth_type: oauth
-  token: ${{ secrets.TOKEN }}
+  token: ${{ secrets.TOKEN_KEY }}
   oauth_consumer_key: ${{ secrets.OAUTH_CONSUMER_KEY }}
   oauth_consumer_secret: ${{ secrets.OAUTH_CONSUMER_SECRET }}
 media_folder: "source/assets/img"
