@@ -5,9 +5,8 @@ backend:
   branch: main
   identity: TaleFou
   auth_type: oauth
-  token: ${{ secrets.TOKEN_KEY }}
-  oauth_consumer_key: ${{ secrets.OAUTH_CONSUMER_KEY }}
-  oauth_consumer_secret: ${{ secrets.OAUTH_CONSUMER_SECRET }}
+  oauth_consumer_key: Ov23liYcBtQHjGvMx3jJ
+  oauth_consumer_secret: 622f0c3c34bc51ac48e2b948c7441545c6c735ad
 media_folder: "source/assets/img"
 public_folder: "/img"
 site_url: "https://vayfou.cn"
@@ -78,7 +77,12 @@ collections:
   - name: "posts"
     label: "文章"
     folder: "source/_posts"
-    preview_path: "/{{filename}}/"
+    preview_path: "{{abbrlink}}/"
+    <<: *common_col_conf
+  - name: "drafts"
+    label: "草稿"
+    folder: "source/_drafts"
+    preview_path: "drafts/{{abbrlink}}/"
     <<: *common_col_conf
   - name: "pages"
     label: "页面"
