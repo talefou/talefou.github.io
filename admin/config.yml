@@ -11,7 +11,7 @@ backend:
 media_folder: "source/assets/img"
 public_folder: "/img"
 site_url: "https://vayfou.cn"
-logo_url: "https:/vayfou.cn/assets/img/vayfou.png"
+logo_url: "/assets/img/vayfou.png"
 locale: "zh_Hans"
 common_col_conf: &common_col_conf
   create: true
