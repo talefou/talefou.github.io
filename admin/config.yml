@@ -5,7 +5,7 @@ backend:
   branch: main
   identity: TaleFou
   auth_type: oauth
-  app_id: Ov23liYcBtQHjGvMx3jJ
+  client_id: Ov23liYcBtQHjGvMx3jJ
   client_secret: 622f0c3c34bc51ac48e2b948c7441545c6c735ad
   base_url: https://api.github.com
 media_folder: "source/assets/img"
