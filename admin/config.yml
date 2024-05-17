@@ -5,8 +5,9 @@ backend:
   branch: main
   identity: TaleFou
   auth_type: oauth
-  oauth_consumer_key: Ov23liYcBtQHjGvMx3jJ
-  oauth_consumer_secret: 622f0c3c34bc51ac48e2b948c7441545c6c735ad
+  app_id: Ov23liYcBtQHjGvMx3jJ
+  client_secret: 622f0c3c34bc51ac48e2b948c7441545c6c735ad
+  base_url: https://api.github.com
 media_folder: "source/assets/img"
 public_folder: "/img"
 site_url: "https://vayfou.cn"
