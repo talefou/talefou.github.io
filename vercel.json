@@ -1,24 +1,13 @@
 {
   "version": 2,
   "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/404/"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=86400, max-age=86400"
-        }
-      ]
-    }
+      {
+          "handle": "filesystem"
+      },
+      {
+          "src": "/(.*)",
+          "status": 404,
+          "dest": "/404/"
+      }
   ]
 }
