@@ -7,7 +7,6 @@
       "dest": "/404/"
     },
     {
-      "src": "/public/(.*)",
       "handle": "filesystem"
     }
   ],
