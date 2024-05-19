@@ -52,7 +52,7 @@ common_col_conf: &common_col_conf
       required: false
       options:
         - "Blog"
-        - "CloudFlare"
+        - "Cloudflare"
         - "Essay"
         - "GitHub"
         - "Hexo"
