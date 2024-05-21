@@ -625,17 +625,8 @@ article#tag .all-tags ul li span:before {
 .article code:not([class]) {
   word-break: break-all;
   color: var(--color-inlinecode);
-  background: var(--color-codeblock);
-  font-size: 0.8125rem;
-  padding: 0 0.5em;
-  margin: 0 0.3em;
-  overflow-wrap: break-word;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-  display: inline-block;
-  text-indent: 0;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 @media screen and (max-width: 500px) {
   .article ul,

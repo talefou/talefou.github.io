@@ -2,7 +2,6 @@
 <html lang="zh-CN">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1'>
   <meta name="generator" content="Hexo 7.1.1">
-  <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -49,8 +48,8 @@
 <meta property="og:description" content="欢迎你的来访，请遵守相关法律法规，文明灌水，谢谢合作~">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://vayfou.cn/assets/icon/icon-192.png">
-<meta property="article:published_time" content="2024-05-19T08:44:16.271Z">
-<meta property="article:modified_time" content="2024-05-19T08:44:16.271Z">
+<meta property="article:published_time" content="2024-05-21T13:39:44.769Z">
+<meta property="article:modified_time" content="2024-05-21T13:39:44.769Z">
 <meta property="article:author" content="VayFou">
 <meta property="article:tag" content="VayFou的小破站,Vayfou,Volantis,Hexo,Blog">
 <meta name="twitter:card" content="summary">
@@ -1847,7 +1846,28 @@ ul.list-v >li>a:hover {
       if(userColorScheme){
         document.documentElement.setAttribute("color-scheme", userColorScheme);
       }
-    </script>
+    document.addEventListener("error", function(e) {
+      const elem = e.target;
+      const parentElem = e.target.parentElement;
+      const parentElemClass = parentElem.classList.toString();
+      const pParentElemClass = parentElem.parentElement.classList.toString();
+      if (elem.tagName.toLowerCase() !== 'img') {
+          return;
+      }
+      elem.classList.add('fix-cursor-default', 'error');
+      if(parentElemClass === 'fancybox' && pParentElemClass === 'fancybox') {
+        parentElem.parentElement.classList.add('hideFancybox');
+        parentElem.parentElement.classList.remove('fancybox');
+        parentElem.classList.remove('fancybox');
+      } else if(parentElemClass === 'img-bg' && pParentElemClass === 'img-wrap') {
+        parentElem.parentElement.classList.add('hideFancybox');
+      } else if(parentElemClass === 'author') {
+        parentElem.parentElement.classList.add('fix-author-imgError');
+      } else if(parentElemClass.indexOf('tk-avatar') != -1 ) {
+        parentElem.parentElement.classList.add('fix-avatar-imgError');
+      }
+    }, true);
+  </script>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -2288,7 +2308,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1716108270597),
+    lastupdate: new Date(1716298798232),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3490,7 +3510,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-05-19 日</div>
+          <div id="last-update-show">2024-05-21 日</div>
         </div>
       
     </div>
@@ -4413,7 +4433,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/TaleFou"],"description":"人间忽晚，山河已秋。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"人间忽晚，山河已秋。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"人间忽晚，山河已秋。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"留言板","description":"人间忽晚，山河已秋。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/page/info/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/page/info/","wordCount":0,"datePublished":"2024-05-19T08:44:16.271Z","dateModified":"2024-05-19T08:44:16.271Z","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/TaleFou"],"description":"人间忽晚，山河已秋。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"人间忽晚，山河已秋。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"人间忽晚，山河已秋。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"留言板","description":"人间忽晚，山河已秋。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/page/info/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/page/info/","wordCount":0,"datePublished":"2024-05-21T13:39:44.769Z","dateModified":"2024-05-21T13:39:44.769Z","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}}]</script>
 
 
 
