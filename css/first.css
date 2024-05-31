@@ -2,8 +2,8 @@
   display: none;
 }
 :root {
-  --color-site-body: #f9fafb;
-  --color-site-bg: #f9fafb;
+  --color-site-body: #f8f8f8;
+  --color-site-bg: #f8f8f8;
   --color-site-inner: #fff;
   --color-site-footer: #666;
   --color-card: #fff;
