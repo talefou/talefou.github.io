@@ -3,7 +3,7 @@
     "lang": "zh-cn",
     "name": "VayFou的小破站",
     "short_name": "TaleFou",
-    "description": "人间忽晚，山河已秋。",
+    "description": "苍山负雪，明烛天南。",
     "start_url": "/",
     "icons": [
       {
@@ -21,7 +21,7 @@
       {
         "name": "关于",
         "short_name": "关于",
-        "description": "若心有所往，何惧道阻且长。",
+        "description": "危楼高百尺，手可摘星辰。",
         "url": "/page/about/",
         "icons": [
           {
