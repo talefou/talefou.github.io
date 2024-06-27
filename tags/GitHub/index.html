@@ -41,13 +41,13 @@
   <!-- 页面元数据 -->
   <title>标签：GitHub - VayFou的小破站</title>
   <meta name="keywords" content="VayFou的小破站,Vayfou,Volantis,Hexo,Blog">
-  <meta desc name="description" content="人间忽晚，山河已秋。 - VayFou - VayFou的小破站">
+  <meta desc name="description" content="危楼高百尺,手可摘星辰. - VayFou - VayFou的小破站">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="VayFou的小破站">
 <meta property="og:url" content="https://vayfou.cn/tags/GitHub/">
 <meta property="og:site_name" content="VayFou的小破站">
-<meta property="og:description" content="人间忽晚，山河已秋。">
+<meta property="og:description" content="危楼高百尺,手可摘星辰.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://vayfou.cn/assets/icon/icon-192.png">
 <meta property="article:author" content="VayFou">
@@ -217,14 +217,6 @@ button {
     background: rgba(255,255,255,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
-}
-@supports (backdrop-filter: blur(20px)) {
-  .blur#comments {
-    backdrop-filter: unset;
-  }
-}
-#layoutHelper-comments {
-  margin-bottom: 100px;
 }
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2308,7 +2300,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719487146787),
+    lastupdate: new Date(1719488384485),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3235,7 +3227,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </span>
   <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
     <meta itemprop="name" content="VayFou的小破站">
-    <meta itemprop="description" content="人间忽晚，山河已秋。">
+    <meta itemprop="description" content="危楼高百尺,手可摘星辰.">
   </span>
   
   
@@ -3290,7 +3282,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </span>
   <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
     <meta itemprop="name" content="VayFou的小破站">
-    <meta itemprop="description" content="人间忽晚，山河已秋。">
+    <meta itemprop="description" content="危楼高百尺,手可摘星辰.">
   </span>
   
   
@@ -3360,14 +3352,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <a class='avatar flat-box circle' href='/page/about/'>
-          <img no-lazy src='/assets/img/avatar.jpg'/>
+          <img no-lazy src='/assets/img/avatar.png'/>
         </a>
       
     
     
       <div class='text'>
         
-          <h2>VayFou</h2>
+          <h2>Vay</h2>
         
         
         
@@ -4226,41 +4218,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-      <script>
-  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
-  function load_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://cdn.staticfile.net/twikoo/1.6.34/twikoo.all.min.js", p_twikoo)
-  }
-  function p_twikoo() {
-    if(!document.querySelectorAll("#twikoo_container")[0])return;
-    let path = pdata.commentPath;
-    let placeholder = pdata.commentPlaceholder || "" || "";
-    if (path.length == 0) {
-      let defaultPath = '';
-      path = defaultPath || decodeURI(window.location.pathname);
-    }
-    twikoo.init(Object.assign(Object.assign({"path":null,"envId":"https://twikoo.vayfou.cn","placeholder":null,"visitor":true}, {
-      el: '#twikoo_container',
-      path: path,
-      placeholder: placeholder,
-      onCommentLoaded: function() {
-        if(typeof VolantisFancyBox === "undefined") {
-          const checkFancyBox = setInterval(() => {
-            if(typeof VolantisFancyBox === "undefined") return;
-            clearInterval(checkFancyBox);
-            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-          })
-        } else {
-          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
-        }
-      }
-    }),pdata.commentConfig))
-  }
-  load_twikoo();
-</script>
-
-    
 
 
 
@@ -4535,7 +4492,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/TaleFou"],"description":"人间忽晚，山河已秋。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/tags/GitHub/","name":"GitHub"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"人间忽晚，山河已秋。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"人间忽晚，山河已秋。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"人间忽晚，山河已秋。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/TaleFou"],"description":"危楼高百尺,手可摘星辰."},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/tags/GitHub/","name":"GitHub"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"危楼高百尺,手可摘星辰.","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"危楼高百尺,手可摘星辰."},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","description":"危楼高百尺,手可摘星辰.","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}}]</script>
 
 
 
