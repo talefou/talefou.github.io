@@ -2,8 +2,8 @@
   display: none;
 }
 :root {
-  --color-site-body: #f7f9fe;
-  --color-site-bg: #f7f9fe;
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
   --color-site-inner: #fff;
   --color-site-footer: #666;
   --color-card: #fff;
@@ -159,6 +159,14 @@ button {
     background: rgba(255,255,255,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
 }
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);

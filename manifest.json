@@ -2,8 +2,8 @@
     "orientation": "any",
     "lang": "zh-cn",
     "name": "VayFou的小破站",
-    "short_name": "Vay",
-    "description": "苍山负雪，明烛天南。",
+    "short_name": "VAY",
+    "description": "去追风，去看世界，去做自己。",
     "start_url": "/",
     "icons": [
       {
@@ -21,7 +21,7 @@
       {
         "name": "关于",
         "short_name": "关于",
-        "description": "危楼高百尺，手可摘星辰。",
+        "description": "去追风，去看世界，去做自己。",
         "url": "/page/about/",
         "icons": [
           {
@@ -33,7 +33,7 @@
       {
         "name": "留言",
         "short_name": "留言",
-        "description": "有什么想对我说的呢？",
+        "description": "想说些什么~",
         "url": "/page/info/",
         "icons": [
           {
@@ -44,6 +44,6 @@
       }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#f7f9fe",
+    "background_color": "#fbfcfc",
     "display": "standalone"
   }

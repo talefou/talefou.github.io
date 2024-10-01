@@ -63,8 +63,8 @@
   display: none;
 }
 :root {
-  --color-site-body: #f7f9fe;
-  --color-site-bg: #f7f9fe;
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
   --color-site-inner: #fff;
   --color-site-footer: #666;
   --color-card: #fff;
@@ -220,6 +220,14 @@ button {
     background: rgba(255,255,255,0.9) !important;
     backdrop-filter: saturate(200%) blur(20px);
   }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
 }
 .shadow {
   box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
@@ -2303,7 +2311,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719559706325),
+    lastupdate: new Date(1727776146429),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2362,7 +2370,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header always floatable show"  >
+    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header always  show"  >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2379,9 +2387,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
+            <img no-lazy class='logo' src='https://static.vayfou.cn/img/logo.png'/>
           
           
-            VayFou
           
         </a>
       
@@ -3212,7 +3220,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </span>
   <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
     <meta itemprop="name" content="VayFou的小破站">
-    <meta itemprop="description" content="危楼高百尺,手可摘星辰.">
+    <meta itemprop="description" content="生活记录｜技术分享｜随缘更新">
   </span>
   
 
@@ -3281,7 +3289,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-duotone fa-eye GREENSEA fa-fw" aria-hidden="true"></i>
       
-      <span id="busuanzi_value_page_pv">
+      <span id="twikoo_visitors">
         <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
       </span>
         
@@ -3476,7 +3484,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
-  
+
+  <article class="post white-box " id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/9d3d3152/#comments">
+    </span>
+    <p ct><i class='fa-duotone fa-comments light-blue'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
 
 
 
@@ -3502,7 +3521,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       <div class='text'>
         
-          <h2>Vay</h2>
+          <h2>VayFou</h2>
         
         
         
@@ -3722,7 +3741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-06-28 日</div>
+          <div id="last-update-show">2024-10-01 日</div>
         </div>
       
     </div>
@@ -4336,6 +4355,41 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
+      <script>
+  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function load_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    volantis.js("https://cdn.staticfile.net/twikoo/1.6.34/twikoo.all.min.js", p_twikoo)
+  }
+  function p_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "" || "";
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    twikoo.init(Object.assign(Object.assign({"path":null,"envId":"https://twikoo.vayfou.cn","placeholder":null,"visitor":true}, {
+      el: '#twikoo_container',
+      path: path,
+      placeholder: placeholder,
+      onCommentLoaded: function() {
+        if(typeof VolantisFancyBox === "undefined") {
+          const checkFancyBox = setInterval(() => {
+            if(typeof VolantisFancyBox === "undefined") return;
+            clearInterval(checkFancyBox);
+            VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+          })
+        } else {
+          VolantisFancyBox.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+        }
+      }
+    }),pdata.commentConfig))
+  }
+  load_twikoo();
+</script>
+
+    
 
 
 
@@ -4629,7 +4683,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/TaleFou"],"description":"危楼高百尺,手可摘星辰."},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"https://vayfou.cn/9d3d3152/","name":"Hexo博客的探索"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"危楼高百尺,手可摘星辰.","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"危楼高百尺,手可摘星辰."},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Hexo博客的探索","description":"Hexo 是一个基于 Node.js 的快速博客框架，支持 Markdown 语法和丰富主题、插件，可以快速部署到 GitHub Pages 。安装简单，常用命令有初始化、生成静态文件、推送等。可以实现自动化部署，部署方式包括 Cloudflare , Vercel 等平台。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/9d3d3152/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/9d3d3152/","wordCount":0,"datePublished":"2024-04-14T05:47:49.000Z","dateModified":"2024-04-27T02:40:41.000Z","articleSection":"教程","keywords":"Hexo,GitHub","image":{"@type":"ImageObject","url":"https://static.vayfou.cn/post-img/@9d3d3152-cover.png","width":1024,"height":768}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/TaleFou"],"description":"生活记录｜技术分享｜随缘更新"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"https://vayfou.cn/9d3d3152/","name":"Hexo博客的探索"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"生活记录｜技术分享｜随缘更新","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"生活记录｜技术分享｜随缘更新"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"Hexo博客的探索","description":"Hexo 是一个基于 Node.js 的快速博客框架，支持 Markdown 语法和丰富主题、插件，可以快速部署到 GitHub Pages 。安装简单，常用命令有初始化、生成静态文件、推送等。可以实现自动化部署，部署方式包括 Cloudflare , Vercel 等平台。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/9d3d3152/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/assets/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/assets/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/9d3d3152/","wordCount":0,"datePublished":"2024-04-14T05:47:49.000Z","dateModified":"2024-04-27T02:40:41.000Z","articleSection":"教程","keywords":"Hexo,GitHub","image":{"@type":"ImageObject","url":"https://static.vayfou.cn/post-img/@9d3d3152-cover.png","width":1024,"height":768}}]</script>
 
 
 
