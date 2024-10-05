@@ -3,8 +3,8 @@ backend:
   name: github
   repo: talefou/blog
   branch: main
-  OAUTH_CLIENT_ID: Ov23li7PRFtoBQNx8kOB
-  OAUTH_CLIENT_SECRET: c3e8874a23325e9c846bae079c14ec5941d43ad1
+  OAUTH_CLIENT_ID: 
+  OAUTH_CLIENT_SECRET: 
 media_folder: "source/asset/img"
 public_folder: "/asset/img"
 site_url: "https://vayfou.cn"

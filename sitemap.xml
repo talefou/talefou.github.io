@@ -20,24 +20,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/openai-proxy/</loc>
-    
-    <lastmod>2024-10-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/policy/</loc>
-    
-    <lastmod>2024-10-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/talks/</loc>
     
     <lastmod>2024-10-05</lastmod>
@@ -66,6 +48,24 @@
   
   <url>
     <loc>https://vayfou.cn/page/links/</loc>
+    
+    <lastmod>2024-10-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/openai-proxy/</loc>
+    
+    <lastmod>2024-10-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/policy/</loc>
     
     <lastmod>2024-10-05</lastmod>
     
