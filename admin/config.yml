@@ -1,0 +1,96 @@
+# https://decapcms.org/docs/configuration-options/
+backend:
+  name: github
+  repo: talefou/blog
+  branch: main
+  OAUTH_CLIENT_ID: Ov23li7PRFtoBQNx8kOB
+  OAUTH_CLIENT_SECRET: c3e8874a23325e9c846bae079c14ec5941d43ad1
+media_folder: "source/asset/img"
+public_folder: "/asset/img"
+site_url: "https://vayfou.cn"
+logo_url: "/asset/img/vayfou.png"
+locale: "zh_Hans"
+common_col_conf: &common_col_conf
+  create: true
+  slug: "{{fields.filename}}"
+  sortable_fields:
+    - "commit_date"
+    - "title"
+    - "date"
+    - "updated"
+  # https://decapcms.org/docs/widgets/
+  fields:
+    - label: "文件名"
+      name: "filename"
+      widget: "string"
+    - label: "标题"
+      name: "title"
+      widget: "string"
+    - label: "发表日期"
+      name: "date"
+      widget: "datetime"
+      format: "YYYY-MM-DD HH:mm:ss"
+      date_format: "YYYY-MM-DD"
+      time_format: "HH:mm:ss"
+    - label: "更新日期"
+      name: "updated"
+      widget: "datetime"
+      format: "YYYY-MM-DD HH:mm:ss"
+      date_format: "YYYY-MM-DD"
+      time_format: "HH:mm:ss"
+      required: false
+    - label: "封面"
+      name: "cover"
+      widget: "image"
+      required: false
+    - label: "标签"
+      name: "tags"
+      widget: "select"
+      multiple: true
+      required: false
+      options:
+        - "Hexo"
+        - "GitHub"
+        - "Cloudflare"
+        - "Vercel"
+        - "CDN"
+    - label: "分类"
+      name: "categories"
+      widget: "select"
+      multiple: true
+      required: false
+      options:
+        - "博客"
+        - "教程"
+        - "资料"
+        - "随笔"
+    - label: "正文"
+      name: "body"
+      widget: "markdown"
+    - label: "原创"
+      name: "toc"
+      widget: "boolean"
+      default: true
+    - label: "评论"
+      name: "comments"
+      widget: "boolean"
+      default: true
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "source/_posts"
+    preview_path: "{{abbrlink}}/"
+    <<: *common_col_conf
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "friends"
+        label: "友链"
+        file: "source/page/friends/index.md"
+        preview_path: "friends/"
+        <<: *common_col_conf
+      - name: "about"
+        label: "关于"
+        file: "source/page/about/index.md"
+        preview_path: "about/"
+        <<: *common_col_conf
