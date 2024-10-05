@@ -51,7 +51,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://vayfou.cn/asset/icon/icon-192.png">
 <meta property="article:published_time" content="2024-04-14T05:47:49.000Z">
-<meta property="article:modified_time" content="2024-10-02T12:15:25.000Z">
+<meta property="article:modified_time" content="2024-10-05T03:06:24.000Z">
 <meta property="article:author" content="VayFou">
 <meta property="article:tag" content="GitHub">
 <meta property="article:tag" content="Hexo">
@@ -2324,7 +2324,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1728024616697),
+    lastupdate: new Date(1728097697851),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3278,13 +3278,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-duotone fa-keyboard PETERRIVE fa-fw" aria-hidden="true"></i>
-      <p>字数：722 字</p>
+      <p>字数：748 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-duotone fa-hourglass-half BELIZEHOLE fa-fw" aria-hidden="true"></i>
-      <p>时长：2 分钟</p>
+      <p>时长：3 分钟</p>
     </a>
   </div>
 
@@ -3353,13 +3353,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>上述 <a href="#3-Git-%E6%8E%A8%E9%80%81">推送</a> 方式会将 Hexo 生成的 <code>public</code> 静态文件直接推送至代码仓库，因此每次更改网站内容时，都需在本地环境进行。</p>
 <p>又因 GitHub 等代码托管平台无法直接处理 Hexo 生成的静态文件，所以需将本地 Hexo 根目录文件推送至仓库，并参考 <a target="_blank" rel="noopener" href="https://xaoxuu.com/blog/20221126/#GitHub-Actions-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2">GitHub Actions 自动化部署</a> 完成处理。</p>
-<p>然后可通过 <a target="_blank" rel="noopener" href="https://github.com/codespaces">GitHub Codespaces</a> &#x2F; <a target="_blank" rel="noopener" href="https://www.oplog.cn/qexo">Qexo</a> &#x2F; <a target="_blank" rel="noopener" href="https://hexoplusplus.js.org/">HexoPlusPlus</a> 等其他途径&#x2F;项目实现对 Hexo 的在线管理。</p>
-<div class="note warning"><p>上传前若无 <code>.gitignore</code> 文件，则需在 Hexo 根目录下新建一个以忽略部分内容：</p></div>
+<div class="note warning"><p>上传前若无 <code>.gitignore</code> 文件，则需在网站的根目录下新建一个以忽略部分内容：</p></div>
 <figure class="highlight txt"><figcaption><span>.gitignore</span></figcaption><table><tr><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
+
+<p>然后可通过 <a target="_blank" rel="noopener" href="https://github.com/codespaces">GitHub Codespaces</a> &#x2F; <a target="_blank" rel="noopener" href="https://www.oplog.cn/qexo">Qexo</a> &#x2F; <a target="_blank" rel="noopener" href="https://hexoplusplus.js.org/">HexoPlusPlus</a> &#x2F; <a target="_blank" rel="noopener" href="https://www.imaegoo.com/2023/hexo-decap/">Decap CMS</a> 等其他途径&#x2F;项目实现对 Hexo 博客的在线管理。</p>
 <h2 id="5-部署"><a href="#5-部署" class="headerlink" title="5.部署"></a>5.部署</h2><ul>
 <li>GitHub Pages &#x2F; Cloudflare &#x2F; Vercel &#x2F; Netlify</li>
 <li>And so on…<br>可通过 Hexo 生成的静态文件推送至代码仓库，并使用上述或其他部署网站，即可轻松将博客内容发布到线上。<br>因部署网站分配的子域名也许会被大陆 DNS 污染，无法直接访问，所以建议解析自己的域名以实现正常访问。</li>
 </ul>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>至此，你的 Hexo 博客已经搭建完成，完结撒花🎉！</p>
 
   </div>
   
@@ -3390,7 +3392,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               <div class="license-meta-item">
                 <div class="license-meta-title">更新于</div>
-                <div class="license-meta-text">2024年10月2日</div>
+                <div class="license-meta-text">2024年10月5日</div>
               </div>
               
               
@@ -3415,10 +3417,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-10-02T20:15:25+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-10-05T11:06:24+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-edit PETERRIVE fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年10月2日</p>
+    <p>更新于：2024年10月5日</p>
   </a>
 </div>
 
@@ -3688,7 +3690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%8E%AF%E5%A2%83"><span class="toc-text">1.环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%AE%89%E8%A3%85-Git"><span class="toc-text">1.1 安装 Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%AE%89%E8%A3%85-Node-js-%E5%92%8C-npm"><span class="toc-text">1.2 安装 Node.js 和 npm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%AE%89%E8%A3%85-Hexo"><span class="toc-text">1.3 安装 Hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Hexo-%E4%BD%BF%E7%94%A8"><span class="toc-text">2.Hexo 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-text">2.1 基础命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1-%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE"><span class="toc-text">2.2.1 网站配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-text">2.2.2 主题配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-3-%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">2.2.3 插件配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Git-%E6%8E%A8%E9%80%81"><span class="toc-text">3.Git 推送</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%90%8E%E5%8F%B0"><span class="toc-text">4.后台</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%83%A8%E7%BD%B2"><span class="toc-text">5.部署</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%8E%AF%E5%A2%83"><span class="toc-text">1.环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%AE%89%E8%A3%85-Git"><span class="toc-text">1.1 安装 Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%AE%89%E8%A3%85-Node-js-%E5%92%8C-npm"><span class="toc-text">1.2 安装 Node.js 和 npm</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%AE%89%E8%A3%85-Hexo"><span class="toc-text">1.3 安装 Hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Hexo-%E4%BD%BF%E7%94%A8"><span class="toc-text">2.Hexo 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="toc-text">2.1 基础命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1-%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE"><span class="toc-text">2.2.1 网站配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="toc-text">2.2.2 主题配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-3-%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">2.2.3 插件配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Git-%E6%8E%A8%E9%80%81"><span class="toc-text">3.Git 推送</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%90%8E%E5%8F%B0"><span class="toc-text">4.后台</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%83%A8%E7%BD%B2"><span class="toc-text">5.部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-text">结尾</span></a></li></ol>
   </div>
 </section>
 
@@ -3751,7 +3753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-10-04 日</div>
+          <div id="last-update-show">2024-10-05 日</div>
         </div>
       
     </div>
@@ -4663,7 +4665,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/talefou"],"description":"去追风，去看世界，去做自己。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"https://vayfou.cn/9d3d3152/","name":"探索 Hexo 框架"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"去追风，去看世界，去做自己。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"去追风，去看世界，去做自己。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"探索 Hexo 框架","description":"本文偏向于技术分享，但仅供参考。主要介绍了 Hexo 的特点，它是一个快速、简洁且高效的博客框架。同时也详细阐述了环境搭建的过程、基础命令的使用，以及如何推送至线上，并且还提供了自动化部署等途径以管理 Hexo 博客。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/9d3d3152/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/9d3d3152/","wordCount":0,"datePublished":"2024-04-14T05:47:49.000Z","dateModified":"2024-10-02T12:15:25.000Z","articleSection":"教程","keywords":"GitHub,Hexo","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/talefou"],"description":"去追风，去看世界，去做自己。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/categories/教程/","name":"教程"}},{"@type":"ListItem","position":3,"item":{"@id":"https://vayfou.cn/9d3d3152/","name":"探索 Hexo 框架"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"去追风，去看世界，去做自己。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"去追风，去看世界，去做自己。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"探索 Hexo 框架","description":"本文偏向于技术分享，但仅供参考。主要介绍了 Hexo 的特点，它是一个快速、简洁且高效的博客框架。同时也详细阐述了环境搭建的过程、基础命令的使用，以及如何推送至线上，并且还提供了自动化部署等途径以管理 Hexo 博客。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/9d3d3152/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/9d3d3152/","wordCount":0,"datePublished":"2024-04-14T05:47:49.000Z","dateModified":"2024-10-05T03:06:24.000Z","articleSection":"教程","keywords":"GitHub,Hexo","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}}]</script>
 
 
 
