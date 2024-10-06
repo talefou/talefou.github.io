@@ -2306,7 +2306,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1728218151274),
+    lastupdate: new Date(1728218420464),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3331,7 +3331,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight txt"><figcaption><span>本站配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">替代名称：ddos</span><br><span class="line">规则集操作：阻止</span><br><span class="line">规则集敏感度：高</span><br></pre></td></tr></table></figure>
 <h3 id="4-3-速度限制"><a href="#4-3-速度限制" class="headerlink" title="4.3 速度限制"></a>4.3 速度限制</h3><p>打开 <code>安全性</code> - <code>WAF</code> - <code>速度限制规则</code> ，点击 <code>创建规则</code> 。</p>
 <figure class="highlight txt"><figcaption><span>参考配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">速度名称：规则限制</span><br><span class="line">字段：URI路径；运算符，包含；值：/ | 表达式：(http.request.uri.path contains &quot;/&quot;)</span><br><span class="line">当速率超过：请求，35；期间，10 秒钟</span><br><span class="line">然后采取措施：选择操作，阻止；响应类型为，默认 Cloudflare 速度限制响应</span><br><span class="line">持续时间：10 秒钟</span><br></pre></td></tr></table></figure>
-<h3 id="4-4-Error-解决"><a href="#4-4-Error-解决" class="headerlink" title="4.4 Error 解决"></a>4.4 Error 解决</h3><p>当访问网站时提示 <code>重定向次数过多</code> ，解决方法如下：</p>
+<h3 id="4-4-Error-解决"><a href="#4-4-Error-解决" class="headerlink" title="4.4 Error 解决"></a>4.4 Error 解决</h3><p>当访问网站时提示<strong>重定向次数过多</strong>，解决方法如下：</p>
 <p>打开 <code>SSL/TLS</code> - <code>概述</code> ，将加密模式设置为 <code>完全</code> 即可。若设置完成后，依然提示，则可暂时将 DNS 的 <code>橙云</code> 关闭。</p>
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>至此，你的网站已经上线，完结撒花🎉！</p>
 
