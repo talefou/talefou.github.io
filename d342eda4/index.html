@@ -2306,7 +2306,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1728217901867),
+    lastupdate: new Date(1728218151274),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3260,7 +3260,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-duotone fa-keyboard PETERRIVE fa-fw" aria-hidden="true"></i>
-      <p>字数：958 字</p>
+      <p>字数：956 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -3317,7 +3317,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h2 id="2-存储"><a href="#2-存储" class="headerlink" title="2.存储"></a>2.存储</h2><p>本站的源码尽数存储于 GitHub 平台，通过将 Hexo 静态文件 <a href="/9d3d3152/#3-Git-%E6%8E%A8%E9%80%81">推送</a> 至 GitHub 仓库，以实现代码文件存储。</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打开终端，输入：</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <h2 id="3-网站上线"><a href="#3-网站上线" class="headerlink" title="3.网站上线"></a>3.网站上线</h2><p>为了将网站发布至线上，我们还需要部署服务来实现，推荐使用 Vercel &#x2F; Cloudflare &#x2F; Netlify 等服务，本站选择 Vercel 以实现部署。</p>
-<div class="note quote"><p>如若不要求速度与绑定域名，可以直接使用 GitHub 提供的 GitHub Pages 完成部署，至此，以下步骤可完全省略。具体操作方法：将静态代码仓库更名为 <code>username.github.io</code>（此处的 <code>username</code> 即为 GitHub 用户名）以开启服务。</p></div>
+<div class="note quote"><p>如若不要求速度与绑定域名，可以直接使用 GitHub 提供的 GitHub Pages 完成部署，至此，以下步骤可完全省略。具体操作方法：将静态代码仓库更名为 <code>*.github.io</code>（此处的 <code>*</code> 即为 GitHub 用户名）以开启服务。</p></div>
 <p>将 Vercel 连接 GitHub 账号，并点击 <code>Add New</code> 新建项目，将代码仓库（上述推送的静态文件仓库）导入 Vercel ，再点击 <code>Import</code> 绑定项目，最后点击 <code>Deploy</code> 部署项目即可。</p>
 <div class="note success"><p>因部署的项目为纯静态，故而我们不需要更改 Vercel 部署的任何设置，按照提示操作即可。</p></div>
 <p>由于 Vercel 分配的子域名 <code>*.vercel.app</code> 被大陆 DNS 污染，所以需要绑定自己的域名以实现正常访问。</p>
