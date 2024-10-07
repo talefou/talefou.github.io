@@ -495,7 +495,7 @@ const VolantisApp = (() => {
       const Nhour = datetime.getHours() < 10 ? "0" + datetime.getHours() : datetime.getHours();
       const Nminute = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
       const Nsecond = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-      result = Nyear + "-" + Nmonth + "-" + Ndate
+      result = Nyear + "年" + Nmonth + "月" + Ndate + "日"
     }
     return result;
   }
