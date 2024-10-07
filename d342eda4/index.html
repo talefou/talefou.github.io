@@ -54,7 +54,7 @@ Hexo 框架可直接参考使用。 - VayFou - VayFou的小破站">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://vayfou.cn/asset/icon/icon-192.png">
 <meta property="article:published_time" content="2024-04-20T15:32:55.000Z">
-<meta property="article:modified_time" content="2024-10-06T12:06:41.000Z">
+<meta property="article:modified_time" content="2024-10-07T04:08:01.000Z">
 <meta property="article:author" content="VayFou">
 <meta property="article:tag" content="Cloudflare">
 <meta property="article:tag" content="GitHub">
@@ -2306,7 +2306,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1728218420464),
+    lastupdate: new Date(1728274669506),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3260,7 +3260,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-duotone fa-keyboard PETERRIVE fa-fw" aria-hidden="true"></i>
-      <p>字数：956 字</p>
+      <p>字数：954 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -3328,10 +3328,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="4-1-CDN-加速"><a href="#4-1-CDN-加速" class="headerlink" title="4.1 CDN 加速"></a>4.1 CDN 加速</h3><p>打开 <code>DNS</code> - <code>记录</code> 页面，开启 <code>橙云</code> 即可（默认状态应为打开）。</p>
 <div class="note warning"><p>因 Cloudflare 在大陆并无节点，所以加速效果也许不会太好（<del>甚至还可能会变成减速器</del>），开启后若感觉速度明显降低，严重影响访客访问体验，则可暂时进行关闭，继续使用 Vercel 提供的默认 DNS 服务器。</p></div>
 <h3 id="4-2-DDoS-防御"><a href="#4-2-DDoS-防御" class="headerlink" title="4.2 DDoS 防御"></a>4.2 DDoS 防御</h3><p>打开 <code>安全性</code> - <code>DDoS</code> 页面，点击 <code>部署DDoS替代</code> 。</p>
-<figure class="highlight txt"><figcaption><span>本站配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">替代名称：ddos</span><br><span class="line">规则集操作：阻止</span><br><span class="line">规则集敏感度：高</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><figcaption><span>参考配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">替代名称：ddos</span><br><span class="line">规则集操作：阻止</span><br><span class="line">规则集敏感度：高</span><br></pre></td></tr></table></figure>
 <h3 id="4-3-速度限制"><a href="#4-3-速度限制" class="headerlink" title="4.3 速度限制"></a>4.3 速度限制</h3><p>打开 <code>安全性</code> - <code>WAF</code> - <code>速度限制规则</code> ，点击 <code>创建规则</code> 。</p>
 <figure class="highlight txt"><figcaption><span>参考配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">速度名称：规则限制</span><br><span class="line">字段：URI路径；运算符，包含；值：/ | 表达式：(http.request.uri.path contains &quot;/&quot;)</span><br><span class="line">当速率超过：请求，35；期间，10 秒钟</span><br><span class="line">然后采取措施：选择操作，阻止；响应类型为，默认 Cloudflare 速度限制响应</span><br><span class="line">持续时间：10 秒钟</span><br></pre></td></tr></table></figure>
-<h3 id="4-4-Error-解决"><a href="#4-4-Error-解决" class="headerlink" title="4.4 Error 解决"></a>4.4 Error 解决</h3><p>当访问网站时提示<strong>重定向次数过多</strong>，解决方法如下：</p>
+<h2 id="5-错误"><a href="#5-错误" class="headerlink" title="5.错误"></a>5.错误</h2><p>当访问网站时提示<strong>重定向次数过多</strong>，解决方法如下：</p>
 <p>打开 <code>SSL/TLS</code> - <code>概述</code> ，将加密模式设置为 <code>完全</code> 即可。若设置完成后，依然提示，则可暂时将 DNS 的 <code>橙云</code> 关闭。</p>
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>至此，你的网站已经上线，完结撒花🎉！</p>
 
@@ -3364,7 +3364,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               <div class="license-meta-item">
                 <div class="license-meta-title">更新于</div>
-                <div class="license-meta-text">2024年10月6日</div>
+                <div class="license-meta-text">2024年10月7日</div>
               </div>
               
               
@@ -3389,10 +3389,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-10-06T20:06:41+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-10-07T12:08:01+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-edit PETERRIVE fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年10月6日</p>
+    <p>更新于：2024年10月7日</p>
   </a>
 </div>
 
@@ -3662,7 +3662,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9F%9F%E5%90%8D"><span class="toc-text">1.域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AD%98%E5%82%A8"><span class="toc-text">2.存储</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%BD%91%E7%AB%99%E4%B8%8A%E7%BA%BF"><span class="toc-text">3.网站上线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE"><span class="toc-text">4.配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-CDN-%E5%8A%A0%E9%80%9F"><span class="toc-text">4.1 CDN 加速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-DDoS-%E9%98%B2%E5%BE%A1"><span class="toc-text">4.2 DDoS 防御</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E9%80%9F%E5%BA%A6%E9%99%90%E5%88%B6"><span class="toc-text">4.3 速度限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-Error-%E8%A7%A3%E5%86%B3"><span class="toc-text">4.4 Error 解决</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-text">结尾</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9F%9F%E5%90%8D"><span class="toc-text">1.域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AD%98%E5%82%A8"><span class="toc-text">2.存储</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%BD%91%E7%AB%99%E4%B8%8A%E7%BA%BF"><span class="toc-text">3.网站上线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE"><span class="toc-text">4.配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-CDN-%E5%8A%A0%E9%80%9F"><span class="toc-text">4.1 CDN 加速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-DDoS-%E9%98%B2%E5%BE%A1"><span class="toc-text">4.2 DDoS 防御</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E9%80%9F%E5%BA%A6%E9%99%90%E5%88%B6"><span class="toc-text">4.3 速度限制</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%94%99%E8%AF%AF"><span class="toc-text">5.错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-text">结尾</span></a></li></ol>
   </div>
 </section>
 
@@ -3725,7 +3725,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-10-06 日</div>
+          <div id="last-update-show">2024-10-07 日</div>
         </div>
       
     </div>
@@ -4637,7 +4637,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/talefou"],"description":"去追风，去看世界，去做自己。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://vayfou.cn/d342eda4/","name":"小站部署记录"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"去追风，去看世界，去做自己。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"去追风，去看世界，去做自己。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"小站部署记录","description":"本文偏向于记录备份，仅供参考。\n\nHexo 框架可直接参考使用。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/d342eda4/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/d342eda4/","wordCount":32,"datePublished":"2024-04-20T15:32:55.000Z","dateModified":"2024-10-06T12:06:41.000Z","articleSection":"博客","keywords":"Cloudflare,GitHub","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},{"@context":"https://schema.org.cn","@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","sameAs":["https://github.com/talefou"],"description":"去追风，去看世界，去做自己。"},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://vayfou.cn/","name":"VayFou的小破站"}},{"@type":"ListItem","position":2,"item":{"@id":"https://vayfou.cn/categories/博客/","name":"博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://vayfou.cn/d342eda4/","name":"小站部署记录"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"VayFou的小破站","url":"https://vayfou.cn/","keywords":"VayFou的小破站,Vayfou,Volantis,Hexo,Blog","description":"去追风，去看世界，去做自己。","author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/","description":"去追风，去看世界，去做自己。"},"publisher":{"@type":"Organization","name":"VayFou的小破站","url":"https://vayfou.cn/","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://vayfou.cn?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"小站部署记录","description":"本文偏向于记录备份，仅供参考。\n\nHexo 框架可直接参考使用。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://vayfou.cn/d342eda4/"},"author":{"@type":"Person","name":"VayFou","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png"},"url":"https://vayfou.cn/"},"publisher":{"@type":"Organization","name":"VayFou的小破站","logo":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}},"url":"https://vayfou.cn/d342eda4/","wordCount":32,"datePublished":"2024-04-20T15:32:55.000Z","dateModified":"2024-10-07T04:08:01.000Z","articleSection":"博客","keywords":"Cloudflare,GitHub","image":{"@type":"ImageObject","url":"/asset/icon/icon-192.png","width":192,"height":192}}]</script>
 
 
 
