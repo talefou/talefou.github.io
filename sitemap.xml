@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/policy/</loc>
+    
+    <lastmod>2024-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/talks/</loc>
     
     <lastmod>2024-10-07</lastmod>
@@ -65,25 +74,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/policy/</loc>
-    
-    <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/categories/</loc>
-    
-    <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/d342eda4/</loc>
     
     <lastmod>2024-10-07</lastmod>
     
@@ -198,7 +189,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/Cloudflare/</loc>
+    <loc>https://vayfou.cn/tags/Hexo/</loc>
     <lastmod>2024-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -211,24 +202,10 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://vayfou.cn/tags/Hexo/</loc>
-    <lastmod>2024-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>https://vayfou.cn/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2024-10-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2024-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
