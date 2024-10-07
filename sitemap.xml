@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vayfou.cn/welcome/</loc>
+    <loc>https://vayfou.cn/tags/</loc>
     
     <lastmod>2024-10-07</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/</loc>
+    <loc>https://vayfou.cn/welcome/</loc>
     
     <lastmod>2024-10-07</lastmod>
     
@@ -47,6 +47,15 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/categories/</loc>
+    
+    <lastmod>2024-10-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/fcircle/</loc>
     
     <lastmod>2024-10-07</lastmod>
@@ -74,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/categories/</loc>
+    <loc>https://vayfou.cn/d342eda4/</loc>
     
     <lastmod>2024-10-07</lastmod>
     
@@ -83,9 +92,9 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/d342eda4/</loc>
+    <loc>https://vayfou.cn/1006cd9b/</loc>
     
-    <lastmod>2024-10-07</lastmod>
+    <lastmod>2024-10-06</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -165,15 +174,6 @@
   
   <url>
     <loc>https://vayfou.cn/af7317c9/</loc>
-    
-    <lastmod>2024-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/1006cd9b/</loc>
     
     <lastmod>2024-10-02</lastmod>
     
