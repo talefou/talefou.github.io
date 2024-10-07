@@ -1794,3 +1794,14 @@ article hr:after {
   padding-left: 2em;
   font-weight: 700;
 }
+# 颜色定义,
+root {
+  --text-p2: #4d4d4d;
+  --block: #f1f2f3;
+  --block-border: #e3e5e8;
+  --blur-bg: rgba(0,0,0,0);
+  --text-meta: #ccc;
+  --text-p4: #999;
+  --theme-link-opa: rgba(244,81,30,0.2);
+  --theme-link: #3dd9b6;
+}
