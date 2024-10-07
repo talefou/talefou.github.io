@@ -1,0 +1,21 @@
+root {
+  --text-p2: #4d4d4d;
+  --block: #f1f2f3;
+  --block-border: #e3e5e8;
+  --blur-bg: rgba(0,0,0,0);
+  --text-meta: #ccc;
+  --text-p4: #999;
+  --theme-link-opa: rgba(244,81,30,0.2);
+  --theme-link: #f4511e;
+}
+
+root[data-theme="dark"] {
+  --text-p2: #b3b3b3;
+  --block: #26292c;
+  --block-border: #383d42;
+  --blur-bg: rgba(0,0,0,0);
+  --text-meta: #4d4d4d;
+  --text-p4: #707070;
+  --theme-link-opa: rgba(244,81,30,0.4);
+  --theme-link: #3dd9b6
+}

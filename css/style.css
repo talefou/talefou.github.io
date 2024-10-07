@@ -8241,6 +8241,16 @@ details[open] > div.content {
     -ms-transform: translateY(0);
   }
 }
+# 颜色定义,
+:root {
+  --text-p2: #4d4d4d;
+  --block: #f1f2f3;
+  --block-border: #e3e5e8;
+  --blur-bg: rgba(0,0,0,0);
+  --text-meta: #ccc;
+  --text-p4: #999;
+  --theme-link-opa: rgba(244,81,30,0.2);
+}
 article#post h2 {
   font-weight: 900;
   line-height: inherit;
@@ -8623,6 +8633,19 @@ table:not(figure table) {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: table !important;
   margin: auto;
+}
+article hr {
+  background-image: none;
+  height: 2em;
+  border: none;
+  margin: 1em 0 1em;
+  text-align: center;
+}
+article hr:after {
+  content: "···";
+  letter-spacing: 2em;
+  padding-left: 2em;
+  font-weight: 700;
 }
 @-moz-keyframes content-fadeIn {
   0% {
@@ -9165,7 +9188,7 @@ img[alt="Author"].error {
   font-size: inherit;
   color: var(--text-p2);
   background: var(--block);
-  background-image: url("https://gcore.jsdelivr.net/gh/HcGys/DataSource/stellar/img/twikoo-textarea-placeholder.webp");
+  background-image: url("https://static.vayfou.cn/img/placeholder.webp");
   background-position: right bottom;
   background-repeat: no-repeat;
 }

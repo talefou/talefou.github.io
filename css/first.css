@@ -1779,29 +1779,3 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
-# 分隔符,
-article hr {
-  background-image: none;
-  height: 2em;
-  border: none;
-  margin: 1em 0 1em;
-  text-align: center;
-}
-# 分隔符:after,
-article hr:after {
-  content: "···";
-  letter-spacing: 2em;
-  padding-left: 2em;
-  font-weight: 700;
-}
-# 颜色定义,
-root {
-  --text-p2: #4d4d4d;
-  --block: #f1f2f3;
-  --block-border: #e3e5e8;
-  --blur-bg: rgba(0,0,0,0);
-  --text-meta: #ccc;
-  --text-p4: #999;
-  --theme-link-opa: rgba(244,81,30,0.2);
-  --theme-link: #3dd9b6;
-}
