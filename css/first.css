@@ -1779,6 +1779,7 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
+# 分隔符,
 article hr {
   background-image: none;
   height: 2em;
@@ -1786,6 +1787,7 @@ article hr {
   margin: 1em 0 1em;
   text-align: center;
 }
+# 分隔符:after,
 article hr:after {
   content: "···";
   letter-spacing: 2em;
