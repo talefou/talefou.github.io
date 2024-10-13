@@ -9397,7 +9397,7 @@ img[alt="Author"].error {
   margin-left: 2.5rem;
 }
 span.tk-comments-count>span+span::before {
-  content: '句风语';
+  content: '条评论';
   font-size: 1.25rem;
 }
 span.tk-comments-count>span+span {
@@ -9438,11 +9438,11 @@ span.tk-comments-count>span+span {
   font-size: 0 !important;
 }
 .tk-replies .tk-content>span:first-child:not(.token)::before {
-  content: '悄悄凑近 ';
+  content: '回复 ';
   font-size: 0.75rem;
 }
 .tk-replies .tk-content>span:first-child:not(.token)::after {
-  content: ' ，吹了口气：';
+  content: ' ，说：';
   font-size: 0.75rem;
 }
 .tk-content a.tk-ruser {
