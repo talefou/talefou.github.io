@@ -8959,7 +8959,7 @@ img[alt="Author"].error {
   font-size: 0.8rem;
   color: #666;
 }
-#twikoo_container {
+.twikoo_container {
   text-align: center;
 }
 .OwO .OwO-body {
@@ -9455,7 +9455,7 @@ span.tk-comments-count>span+span {
   margin-left: 10.8px;
 }
 .tk-comments-container>.tk-comment.tk-master::before {
-  background-image: url("https://static.vayfou.cn/img/star.gif");
+  background-image: url("https://gcore.jsdelivr.net/gh/talefou/static/img/star.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9470,7 +9470,7 @@ span.tk-comments-count>span+span {
   z-index: 1;
 }
 .tk-replies>.tk-comment.tk-master::before {
-  background-image: url("https://static.vayfou.cn/img/star.gif");
+  background-image: url("https://gcore.jsdelivr.net/gh/talefou/static/img/star.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
