@@ -2293,7 +2293,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1729082406913),
+    lastupdate: new Date(1729172769303),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -3247,7 +3247,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-duotone fa-keyboard PETERRIVE fa-fw" aria-hidden="true"></i>
-      <p>字数：954 字</p>
+      <p>字数：959 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -3318,7 +3318,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <div class="note bug red"><p>需要先将域名解析至 Vercel 提供的默认 DNS 服务器，以防止 SSL 证书签发失败的问题。</p></div>
 
-<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>这里的配置基于 Clodflare 提供的服务。</p>
+<h2 id="4-配置"><a href="#4-配置" class="headerlink" title="4.配置"></a>4.配置</h2><p>以下的配置基于 Clodflare 提供的服务。</p>
 <h3 id="4-1-CDN-加速"><a href="#4-1-CDN-加速" class="headerlink" title="4.1 CDN 加速"></a>4.1 CDN 加速</h3><p>打开 <code>DNS</code> - <code>记录</code> 页面，开启 <code>橙云</code> 即可（默认状态应为打开）。</p>
 <div class="note warning"><p>因 Cloudflare 在大陆并无节点，所以加速效果也许不会太好（<del>甚至还可能会变成减速器</del>），开启后若感觉速度明显降低，严重影响访客访问体验，则可暂时进行关闭，继续使用 Vercel 提供的默认 DNS 服务器。</p></div>
 
@@ -3326,7 +3326,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight txt"><figcaption><span>参考配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">替代名称：ddos</span><br><span class="line">规则集操作：阻止</span><br><span class="line">规则集敏感度：高</span><br></pre></td></tr></table></figure>
 
 <h3 id="4-3-速度限制"><a href="#4-3-速度限制" class="headerlink" title="4.3 速度限制"></a>4.3 速度限制</h3><p>打开 <code>安全性</code> - <code>WAF</code> - <code>速度限制规则</code> ，点击 <code>创建规则</code> 。</p>
-<figure class="highlight txt"><figcaption><span>参考配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">速度名称：规则限制</span><br><span class="line">字段：URI路径；运算符，包含；值：/ | 表达式：(http.request.uri.path contains &quot;/&quot;)</span><br><span class="line">当速率超过：请求，35；期间，10 秒钟</span><br><span class="line">然后采取措施：选择操作，阻止；响应类型为，默认 Cloudflare 速度限制响应</span><br><span class="line">持续时间：10 秒钟</span><br></pre></td></tr></table></figure>
+<figure class="highlight txt"><figcaption><span>参考配置如下：</span></figcaption><table><tr><td class="code"><pre><span class="line">规则名称：速度限制</span><br><span class="line"></span><br><span class="line">字段：URI 路径，运算符：包含，值：/</span><br><span class="line">表达式：(http.request.uri.path contains &quot;/&quot;)</span><br><span class="line"></span><br><span class="line">当速率超过...</span><br><span class="line">请求：35，期间：10 秒钟</span><br><span class="line"></span><br><span class="line">然后采取措施...</span><br><span class="line">选择操作：阻止，响应类型为：默认 Cloudflare 速度限制响应</span><br><span class="line"></span><br><span class="line">持续时间达...</span><br><span class="line">持续时间：10 秒钟</span><br></pre></td></tr></table></figure>
 
 <h2 id="5-错误"><a href="#5-错误" class="headerlink" title="5.错误"></a>5.错误</h2><p>当访问网站时提示<strong>重定向次数过多</strong>，解决方法如下：</p>
 <p>打开 <code>SSL/TLS</code> - <code>概述</code> ，将加密模式设置为 <code>完全</code> 即可。若设置完成后，依然提示，则可暂时将 DNS 的 <code>橙云</code> 关闭。</p>
@@ -3724,7 +3724,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-10-16 日</div>
+          <div id="last-update-show">2024-10-17 日</div>
         </div>
       
     </div>
