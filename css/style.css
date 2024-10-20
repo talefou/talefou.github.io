@@ -8745,6 +8745,18 @@ img[alt="Author"].error {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none !important;
 }
+#comments img.error:after {
+  content: 'img error';
+}
+.fix-avatar-imgError > div > img.error {
+  min-height: 100%;
+  min-width: 100%;
+}
+.fix-avatar-imgError > div > img.error:after {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
 .timelines-common {
   background-color: var(--color-card);
   border-radius: 8px;
