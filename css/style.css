@@ -8745,23 +8745,6 @@ img[alt="Author"].error {
   display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
   display: none !important;
 }
-:root {
-  --text-p2-new: #4d4d4d;
-  --block-border-new: #e3e5e8;
-  --blur-bg-new: rgba(255,255,255,0.749);
-  --block-new: #f1f2f3;
-  --text-p3-new: #808080;
-  --block-2-new: #e5e6e7;
-  --text-p1-new: #333;
-  --text-p4-new: #999;
-  --theme-color-opa-new: rgba(24,92,109,0.3);
-  --theme-color-new: #185c6d;
-  --theme-link-opa-new: rgba(32,148,243,0.3);
-  --theme-link-new: #2094f3;
-  --text-p3-opa-new: rgba(128,128,128,0.3);
-  --code-tools-new: #e0e0e0;
-  --card-new: #e7e7e7;
-}
 .timelines-common {
   background-color: var(--color-card);
   border-radius: 8px;
