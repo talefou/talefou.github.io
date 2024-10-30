@@ -8472,12 +8472,6 @@ details summary a span,
     background-repeat: no-repeat;
   }
 }
-table:not(figure table) {
-  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-  display: table !important;
-  margin: auto;
-}
 article hr {
   background-image: none;
   height: 2em;
