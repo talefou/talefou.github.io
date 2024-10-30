@@ -20,42 +20,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/categories/</loc>
-    
-    <lastmod>2024-10-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/about/</loc>
-    
-    <lastmod>2024-10-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/atom/</loc>
-    
-    <lastmod>2024-10-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/fcircle/</loc>
-    
-    <lastmod>2024-10-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/friends/</loc>
     
     <lastmod>2024-10-30</lastmod>
@@ -138,6 +102,42 @@
   
   <url>
     <loc>https://vayfou.cn/page/notes/english/</loc>
+    
+    <lastmod>2024-10-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/categories/</loc>
+    
+    <lastmod>2024-10-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/about/</loc>
+    
+    <lastmod>2024-10-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/atom/</loc>
+    
+    <lastmod>2024-10-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/fcircle/</loc>
     
     <lastmod>2024-10-30</lastmod>
     
