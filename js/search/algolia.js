@@ -1,2 +1,235 @@
-"use strict";function _typeof(e){return _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},_typeof(e)}function _defineProperty(e,t,a){return(t=_toPropertyKey(t))in e?Object.defineProperty(e,t,{value:a,enumerable:!0,configurable:!0,writable:!0}):e[t]=a,e}function _toPropertyKey(e){var t=_toPrimitive(e,"string");return"symbol"==_typeof(t)?t:t+""}function _toPrimitive(e,t){if("object"!=_typeof(e)||!e)return e;var a=e[Symbol.toPrimitive];if(void 0!==a){var n=a.call(e,t||"default");if("object"!=_typeof(n))return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}var SearchService=function(){var e,t,a,n={};return n.queryText=null,n.template='<div id="u-search">\n  <div class="modal">\n    <header class="modal-header" class="clearfix">\n      <button type="submit" id="u-search-modal-btn-submit" class="u-search-btn-submit">\n        <span class="fa-solid fa-search"></span>\n      </button>\n      <div id="algolia-search-input"></div>\n      <a id="u-search-btn-close" class="btn-close"> <span class="fa-solid fa-times"></span> </a>\n    </header>\n    <main class="modal-body">\n      <div id="algolia-search-results">\n        <div id="algolia-hits">\n          <div class="search-icon"><i class="fa-sharp fa-solid fa-telescope"></i></i></div>\n        </div>\n      </div>\n    </main>\n    <footer>\n      <div id="algolia-pagination"></div>\n      <hr>\n      <div id="algolia-info">\n        <div class="algolia-stats"></div>\n        <div class="algolia-poweredBy"></div>\n      </div>\n    </footer>\n  </div>\n  <div id="modal-overlay" class="modal-overlay"></div>\n  </div>\n  ',n.init=function(){var e=document.createElement("div");e.innerHTML+=n.template,document.body.append(e),(t=volantis.GLOBAL_CONFIG.search).appId&&t.apiKey&&t.indexName?(n.event(),n.setAlgolia()):(document.querySelector("#u-search main.modal-body").innerHTML="Algolia setting is invalid!",document.querySelector("#u-search main.modal-body").style.textAlign="center",document.querySelector("#u-search .modal").style.maxHeight="128px")},n.event=function(){document.querySelector("#u-search-btn-close").addEventListener("click",n.close,!1),document.querySelector("#modal-overlay").addEventListener("click",n.close,!1),document.querySelectorAll(".u-search-form").forEach((function(e){e.addEventListener("submit",n.onSubmit,!1)})),document.querySelector("#algolia-search-input").addEventListener("input",(function(e){var t=e.target.querySelector(".ais-SearchBox-input");n.queryText=t?t.value:e.target.value}))},n.setAlgolia=function(){var i;e=instantsearch({indexName:t.indexName,searchClient:algoliasearch(t.appId,t.apiKey),searchFunction:function(e){e.state.query&&e.search()}});var o=instantsearch.widgets.configure({hitsPerPage:t.hitsPerPage}),r=instantsearch.widgets.searchBox({container:"#algolia-search-input",autofocus:!0,showReset:!1,showSubmit:!1,showLoadingIndicator:!1,searchAsYouType:t.searchAsYouType,placeholder:t.placeholder,templates:{input:"algolia-input"},queryHook:function(e,t){clearTimeout(a),a=setTimeout((function(){return t(e)}),500)}}),s=instantsearch.widgets.hits({container:"#algolia-hits",templates:{item:function(e){var t=n.queryText?"?keyword=".concat(n.queryText):"",a=e.permalink?e.permalink:"".concat(volantis.GLOBAL_CONFIG.root).concat(e.path),i=e._highlightResult,o=i.contentStripTruncate?n.cutContent(i.contentStripTruncate.value):i.contentStrip?n.cutContent(i.contentStrip.value):i.content?n.cutContent(i.content.value):"";return'\n            <a href="'.concat(a).concat(t,'" class="result">\n            <span class="title">').concat(i.title.value||"no-title",'</span>\n            <span class="digest">').concat(o,"</span>\n            </a>")},empty:function(e){return'<div id="resule-hits-empty"><i class="fa-solid fa-box-open"></i><p>'.concat(volantis.GLOBAL_CONFIG.languages.search.hits_empty.replace(/\$\{query}/,e.query),"</p></div>")}}}),c=instantsearch.widgets.stats({container:"#algolia-info > .algolia-stats",templates:{text:function(e){var t=volantis.GLOBAL_CONFIG.languages.search.hits_stats.replace(/\$\{hits}/,e.nbHits).replace(/\$\{time}/,e.processingTimeMS);return"".concat(t)}}}),l=instantsearch.widgets.poweredBy({container:"#algolia-info > .algolia-poweredBy",theme:"dark"===(null===(i=volantis.dark)||void 0===i?void 0:i.mode)?"dark":"light"}),u=instantsearch.widgets.pagination({container:"#algolia-pagination",totalPages:5,templates:{first:'<i class="fas fa-angle-double-left"></i>',last:'<i class="fas fa-angle-double-right"></i>',previous:'<i class="fas fa-angle-left"></i>',next:'<i class="fas fa-angle-right"></i>'}});e.addWidgets([o,r,s,c,l,u]),e.start()},n.setQueryText=function(a){var i;n.queryText=a,e||n.init(),null===(i=e)||void 0===i||i.setUiState(_defineProperty({},t.indexName,{query:a}))},n.search=function(){document.querySelector("#u-search").style.display="block",document.addEventListener("keydown",(function(e){"Escape"===e.code&&n.close()}),{once:!0})},n.onSubmit=function(e){e.preventDefault();var t=e.target.querySelector(".u-search-input");n.setQueryText(null!=t&&t.value?t.value:e.target.value),n.search()},n.cutContent=function(e){if(""===e)return"";var t=e.indexOf("<mark>"),a=t-30,n=t+120,i="",o="";return a<=0?(a=0,n=140):i="...",n>e.length?n=e.length:o="...",i+e.substring(a,n)+o},n.close=function(){document.querySelector("#u-search").style.display="none"},{init:n.init,setQueryText:function(e){n.setQueryText(e)},search:n.search,close:n.close}}();Object.freeze(SearchService),SearchService.init();
-//# sourceMappingURL=../../maps/js/search/algolia.js.map
+let SearchService = (() => {
+  const fn = {};
+  let search, algolia, timerId; 
+  fn.queryText = null;
+  fn.template = `<div id="u-search">
+  <div class="modal">
+    <header class="modal-header" class="clearfix">
+      <button type="submit" id="u-search-modal-btn-submit" class="u-search-btn-submit">
+        <span class="fa-solid fa-search"></span>
+      </button>
+      <div id="algolia-search-input"></div>
+      <a id="u-search-btn-close" class="btn-close"> <span class="fa-solid fa-times"></span> </a>
+    </header>
+    <main class="modal-body">
+      <div id="algolia-search-results">
+        <div id="algolia-hits">
+          <div class="search-icon"><i class="fa-sharp fa-solid fa-telescope"></i></i></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="algolia-pagination"></div>
+      <hr>
+      <div id="algolia-info">
+        <div class="algolia-stats"></div>
+        <div class="algolia-poweredBy"></div>
+      </div>
+    </footer>
+  </div>
+  <div id="modal-overlay" class="modal-overlay"></div>
+  </div>
+  `;
+
+  fn.init = () => {
+    let div = document.createElement("div");
+    div.innerHTML += fn.template;
+    document.body.append(div);
+
+    algolia = volantis.GLOBAL_CONFIG.search;
+    if (algolia.appId && algolia.apiKey && algolia.indexName) {
+      fn.event();
+      fn.setAlgolia();
+    } else {
+      document.querySelector('#u-search main.modal-body').innerHTML = 'Algolia setting is invalid!';
+      document.querySelector('#u-search main.modal-body').style.textAlign = 'center';
+      document.querySelector('#u-search .modal').style.maxHeight = '128px';
+    }
+  }
+
+  fn.event = () => {
+    document
+      .querySelector("#u-search-btn-close")
+      .addEventListener("click", fn.close, false);
+    document
+      .querySelector("#modal-overlay")
+      .addEventListener("click", fn.close, false);
+    document.querySelectorAll(".u-search-form").forEach((e) => {
+      e.addEventListener("submit", fn.onSubmit, false);
+    });
+    document.querySelector("#algolia-search-input").addEventListener("input", event => {
+      let input = event.target.querySelector(".ais-SearchBox-input");
+      if (input) {
+        fn.queryText = input.value;
+      } else {
+        fn.queryText = event.target.value;
+      }
+    })
+  }
+
+  fn.setAlgolia = () => {
+    search = instantsearch({
+      indexName: algolia.indexName,
+      searchClient: algoliasearch(algolia.appId, algolia.apiKey),
+      searchFunction(helper) {
+        helper.state.query && helper.search()
+      },
+    })
+
+    const configure = instantsearch.widgets.configure({
+      hitsPerPage: algolia.hitsPerPage
+    })
+
+    const searchBox = instantsearch.widgets.searchBox({
+      container: '#algolia-search-input',
+      autofocus: true,
+      showReset: false,
+      showSubmit: false,
+      showLoadingIndicator: false,
+      searchAsYouType: algolia.searchAsYouType,
+      placeholder: algolia.placeholder,
+      templates: {
+        input: 'algolia-input'
+      },
+      queryHook(query, refine) {
+        clearTimeout(timerId)
+        timerId = setTimeout(() => refine(query), 500)
+      }
+    })
+
+    const hits = instantsearch.widgets.hits({
+      container: '#algolia-hits',
+      templates: {
+        item(data) {
+          const keyword = !!fn.queryText ? `?keyword=${fn.queryText}` : ''
+          const link = data.permalink ? data.permalink : `${volantis.GLOBAL_CONFIG.root}${data.path}`
+          const result = data._highlightResult
+          const content = result.contentStripTruncate
+            ? fn.cutContent(result.contentStripTruncate.value)
+            : result.contentStrip
+              ? fn.cutContent(result.contentStrip.value)
+              : result.content
+                ? fn.cutContent(result.content.value)
+                : ''
+          return `
+            <a href="${link}${keyword}" class="result">
+            <span class="title">${result.title.value || 'no-title'}</span>
+            <span class="digest">${content}</span>
+            </a>`
+        },
+        empty: function (data) {
+          return (
+            `<div id="resule-hits-empty"><i class="fa-solid fa-box-open"></i><p>${volantis.GLOBAL_CONFIG.languages.search.hits_empty.replace(/\$\{query}/, data.query)}</p></div>`
+          )
+        }
+      }
+    })
+
+    const stats = instantsearch.widgets.stats({
+      container: '#algolia-info > .algolia-stats',
+      templates: {
+        text: function (data) {
+          const stats = volantis.GLOBAL_CONFIG.languages.search.hits_stats
+            .replace(/\$\{hits}/, data.nbHits)
+            .replace(/\$\{time}/, data.processingTimeMS)
+          return (
+            `${stats}`
+          )
+        }
+      }
+    })
+
+    const powerBy = instantsearch.widgets.poweredBy({
+      container: '#algolia-info > .algolia-poweredBy',
+      theme: volantis.dark?.mode === 'dark' ? 'dark' : 'light'
+    })
+
+    const pagination = instantsearch.widgets.pagination({
+      container: '#algolia-pagination',
+      totalPages: 5,
+      templates: {
+        first: '<i class="fas fa-angle-double-left"></i>',
+        last: '<i class="fas fa-angle-double-right"></i>',
+        previous: '<i class="fas fa-angle-left"></i>',
+        next: '<i class="fas fa-angle-right"></i>'
+      }
+    })
+
+    search.addWidgets([configure, searchBox, hits, stats, powerBy, pagination])
+
+    search.start()
+
+  }
+
+  fn.setQueryText = queryText => {
+    fn.queryText = queryText;
+    if (!search) {
+      fn.init()
+    }
+    search?.setUiState({
+      [algolia.indexName]: {
+        query: queryText
+      }
+    })
+  }
+
+  fn.search = () => {
+    document.querySelector("#u-search").style.display = "block";
+    document.addEventListener("keydown", event => {
+      if (event.code === "Escape") {
+        fn.close();
+      }
+    }, { once: true })
+  }
+
+  fn.onSubmit = (event) => {
+    event.preventDefault();
+    let input = event.target.querySelector(".u-search-input");
+    fn.setQueryText(input?.value ? input.value : event.target.value)
+    fn.search();
+  };
+
+  fn.cutContent = content => {
+    if (content === '') return ''
+
+    const firstOccur = content.indexOf('<mark>')
+
+    let start = firstOccur - 30
+    let end = firstOccur + 120
+    let pre = ''
+    let post = ''
+
+    if (start <= 0) {
+      start = 0
+      end = 140
+    } else {
+      pre = '...'
+    }
+
+    if (end > content.length) {
+      end = content.length
+    } else {
+      post = '...'
+    }
+
+    let matchContent = pre + content.substring(start, end) + post
+    return matchContent
+  }
+
+  fn.close = () => {
+    document.querySelector("#u-search").style.display = "none";
+  };
+
+  return {
+    init: fn.init,
+    setQueryText: queryText => {
+      fn.setQueryText(queryText);
+    },
+    search: fn.search,
+    close: fn.close
+  }
+})()
+
+Object.freeze(SearchService);
+
+SearchService.init();
