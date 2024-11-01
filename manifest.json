@@ -1,7 +1,7 @@
 {
     "orientation": "any",
     "lang": "zh-cn",
-    "name": "VAYFOU的小破站",
+    "name": "VAYFOU",
     "short_name": "VAYFOU",
     "description": "去追风，去看世界，去做自己。",
     "start_url": "/",
@@ -44,6 +44,6 @@
       }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#f4f4f4",
+    "background_color": "#ffffff",
     "display": "standalone"
   }
