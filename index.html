@@ -1176,20 +1176,6 @@ button {
 .l_header #wrapper .nav-main .title img {
   height: 64px;
 }
-@media screen and (max-width: 500px) {
-  .l_header #wrapper .nav-main .title img {
-    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-    display: none;
-  }
-}
-@media screen and (min-width: 500px) {
-  .l_header #wrapper .nav-main .title span {
-    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-    display: none;
-  }
-}
 .l_header .nav-sub {
   max-width: 1080px;
   margin: auto;
@@ -1894,6 +1880,14 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
+@media screen and (max-width: 2048px) {
+  .l_header {
+    left: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    max-width: 100% !important;
+  }
+}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
@@ -2365,7 +2359,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: false,
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1730528969925),
+    lastupdate: new Date(1730540861628),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2373,8 +2367,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","announcement","maps","lastupdate","webinfo"],
-      for_post: ["blogger","maps","toc","webinfo"],
+      for_page: ["announcement","log","maps","lastupdate","webinfo"],
+      for_post: ["announcement","log","maps","toc","webinfo"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2390,7 +2384,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       message: {"enable":false,"icon":{"default":"fa-solid fa-info-circle PETERRIVE","quection":"fa-solid fa-question-circle PETERRIVE"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":false,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright"},"aplayer":{"enable":false,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":false,"notice":false}},
       
       
-      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.prevNext","hr","menus.link","hr","menus.darkMode"],"options":{"iconPrefix":"fa-light","articleShowLink":true,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-light fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-light fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-light fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-light fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyCut","name":"剪切文本","icon":"fa-light fa-cut PETERRIVE","event":"copyCut","group":"inputBox"},{"id":"copyPaste","name":"粘贴文本","icon":"fa-light fa-paste PETERRIVE","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-light fa-object-ungroup PETERRIVE","event":"copyAll","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-light fa-copy PETERRIVE","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-light fa-search PETERRIVE","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-light fa-search PETERRIVE","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-light fa-external-link-square-alt PETERRIVE","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-light fa-link PETERRIVE","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片文件","icon":"fa-light fa-image PETERRIVE","event":"copyImg","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-light fa-print NEPHRITIS","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-light fa-book-open NEPHRITIS","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"info","name":"留言板","icon":"fa-light fa-fish PETERRIVE","link":"/page/info/","group":"link"},{"id":"random","name":"随机文章","icon":"fa-light fa-paper-plane SUNFLOWER","link":"/random/","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-light fa-link WISTERIA","link":"/page/friends/","group":"link"},{"id":"archives","name":"文章归档","icon":"fa-light fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-light fa-gingerbread-man ALIZARIN","link":"/page/about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-light fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-light fa-angles-left PETERRIVE","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-light fa-angles-right PETERRIVE","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
+      rightmenus: {"enable":true,"order":["plugins.navigation","hr","plugins.inputBox","plugins.seletctText","plugins.elementCheck","plugins.elementImage","hr","menus.prevNext","hr","menus.link","hr","menus.darkMode"],"options":{"iconPrefix":"fa-light","articleShowLink":true,"musicAlwaysShow":false},"plugins":{"navigation":[{"id":"left","name":"转到上一页","icon":"fa-light fa-arrow-left PETERRIVE","event":"history.back()","group":"navigation"},{"id":"right","name":"转到下一页","icon":"fa-light fa-arrow-right PETERRIVE","event":"history.forward()","group":"navigation"},{"id":"redo","name":"刷新当前页面","icon":"fa-light fa-redo PETERRIVE","event":"window.location.reload()","group":"navigation"},{"id":"up","name":"回到顶部","icon":"fa-light fa-arrow-up PETERRIVE","event":"VolantisApp.scrolltoElement(volantis.dom.bodyAnchor)","group":"navigation"}],"inputBox":[{"id":"copyCut","name":"剪切文本","icon":"fa-light fa-cut PETERRIVE","event":"copyCut","group":"inputBox"},{"id":"copyPaste","name":"粘贴文本","icon":"fa-light fa-paste PETERRIVE","event":"copyPaste","group":"inputBox"},{"id":"copyAll","name":"全选文本","icon":"fa-light fa-object-ungroup PETERRIVE","event":"copyAll","group":"inputBox"}],"seletctText":[{"id":"copyText","name":"复制文本","icon":"fa-light fa-copy PETERRIVE","event":"copyText","group":"seletctText"},{"id":"searchWord","name":"站内搜索","icon":"fa-light fa-search PETERRIVE","event":"OpenSearch(__text__)","group":"seletctText"},{"id":"bingSearch","name":"必应搜索","icon":"fa-light fa-search PETERRIVE","event":"window.open(`https://cn.bing.com/search?q=${__text__}`)","group":"seletctText"}],"elementCheck":[{"id":"openTab","name":"新标签页打开","icon":"fa-light fa-external-link-square-alt PETERRIVE","event":"window.open(__link__)","group":"elementCheck"},{"id":"copyLink","name":"复制链接地址","icon":"fa-light fa-link PETERRIVE","event":"copyLink","group":"elementCheck"}],"elementImage":[{"id":"copyImg","name":"复制图片文件","icon":"fa-light fa-image PETERRIVE","event":"copyImg","group":"elementImage"}],"articlePage":[{"id":"printMode","name":"打印页面","icon":"fa-light fa-print NEPHRITIS","event":"printMode","group":"articlePage"},{"id":"readMode","name":"阅读模式","icon":"fa-light fa-book-open NEPHRITIS","event":"readMode","group":"articlePage"}]},"menus":{"link":[{"id":"info","name":"留言板","icon":"fa-light fa-fish PETERRIVE","link":"/page/info/","group":"link"},{"id":"random","name":"随机文章","icon":"fa-light fa-paper-plane SUNFLOWER","link":"/random/","group":"link"},{"id":"friends","name":"我的朋友们","icon":"fa-light fa-link WISTERIA","link":"/page/friends/","group":"link"},{"id":"archives","name":"文章归档","icon":"fa-light fa-globe-asia CONCRETE","link":"/archives/","group":"link"},{"id":"about","name":"关于我","icon":"fa-light fa-compass-drafting ALIZARIN","link":"/page/about/","group":"link"}],"darkMode":[{"id":"darkMode","name":"暗黑模式","icon":"fa-light fa-eclipse-alt WISTERIA","event":"volantis.dark.toggle()","group":"darkMode"}],"prevNext":[{"id":"prev","name":"查看上一篇","icon":"fa-light fa-angles-left PETERRIVE","event":"volantis.rightmenu.jump('prev')","group":"prevNext"},{"id":"next","name":"查看下一篇","icon":"fa-light fa-angles-right PETERRIVE","event":"volantis.rightmenu.jump('next')","group":"prevNext"}]}}
       
     },
     search: {
@@ -2441,11 +2435,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='/asset/img/logo.png'/>
           
           
-          
-            <span>VAYFOU</span>
+            VAYFOU
           
         </a>
       
@@ -2465,7 +2457,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home WISTERIA fa-fw'></i>首页
+                  <i class='fa-light fa-home CARROT fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2563,81 +2555,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 title="娱乐"
+                 title="功能"
                   
                   
                   >
-                  <i class='fa-light fa-bars PUMPKIN fa-fw'></i>娱乐
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/photos/" title="相册"
-                  
-                  
-                  
-                    active-action="action-pagephotos"
-                  >
-                  <i class='fa-light fa-image NEPHRITIS fa-fw'></i>相册
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/talks/" title="说说"
-                  
-                  
-                  
-                    active-action="action-pagetalks"
-                  >
-                  <i class='fa-light fa-comment-lines PETERRIVE fa-fw'></i>说说
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://music.vayfou.cn" title="音乐"
-                  
-                  
-                  
-                    active-action="action-https:musicvayfoucn"
-                  >
-                  <i class='fa-light fa-music ALIZARIN fa-fw'></i>音乐
-                </a>
-                
-              </li>
-            
-          
-                    
-                  </ul>
-                
-              </li>
-            
-          
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 title="页面"
-                  
-                  
-                  >
-                  <i class='fa-light fa-anchor TURQUOISE fa-fw'></i>页面
+                  <i class='fa-light fa-anchor TURQUOISE fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -2743,6 +2665,76 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 title="娱乐"
+                  
+                  
+                  >
+                  <i class='fa-light fa-bars PUMPKIN fa-fw'></i>娱乐
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/page/photos/" title="相册"
+                  
+                  
+                  
+                    active-action="action-pagephotos"
+                  >
+                  <i class='fa-light fa-image NEPHRITIS fa-fw'></i>相册
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/page/talks/" title="说说"
+                  
+                  
+                  
+                    active-action="action-pagetalks"
+                  >
+                  <i class='fa-light fa-comment-lines PETERRIVE fa-fw'></i>说说
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://music.vayfou.cn" title="音乐"
+                  
+                  
+                  
+                    active-action="action-https:musicvayfoucn"
+                  >
+                  <i class='fa-light fa-music ALIZARIN fa-fw'></i>音乐
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                  title="更多"
                   
                   
@@ -2830,7 +2822,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-pageinfo"
                   >
-                  <i class='fa-light fa-object-group NEPHRITIS fa-fw'></i>留言板
+                  <i class='fa-light fa-comment-alt-smile NEPHRITIS fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -2888,7 +2880,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-light fa-home WISTERIA fa-fw'></i>首页
+                  <i class='fa-light fa-home CARROT fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2986,81 +2978,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 title="娱乐"
+                 title="功能"
                   
                   
                   >
-                  <i class='fa-light fa-bars PUMPKIN fa-fw'></i>娱乐
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/photos/" title="相册"
-                  
-                  
-                  
-                    active-action="action-pagephotos"
-                  >
-                  <i class='fa-light fa-image NEPHRITIS fa-fw'></i>相册
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/page/talks/" title="说说"
-                  
-                  
-                  
-                    active-action="action-pagetalks"
-                  >
-                  <i class='fa-light fa-comment-lines PETERRIVE fa-fw'></i>说说
-                </a>
-                
-              </li>
-            
-          
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://music.vayfou.cn" title="音乐"
-                  
-                  
-                  
-                    active-action="action-https:musicvayfoucn"
-                  >
-                  <i class='fa-light fa-music ALIZARIN fa-fw'></i>音乐
-                </a>
-                
-              </li>
-            
-          
-                    
-                  </ul>
-                
-              </li>
-            
-          
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 title="页面"
-                  
-                  
-                  >
-                  <i class='fa-light fa-anchor TURQUOISE fa-fw'></i>页面
+                  <i class='fa-light fa-anchor TURQUOISE fa-fw'></i>功能
                 </a>
                 
                   <ul class="list-v">
@@ -3166,6 +3088,76 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 title="娱乐"
+                  
+                  
+                  >
+                  <i class='fa-light fa-bars PUMPKIN fa-fw'></i>娱乐
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/page/photos/" title="相册"
+                  
+                  
+                  
+                    active-action="action-pagephotos"
+                  >
+                  <i class='fa-light fa-image NEPHRITIS fa-fw'></i>相册
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/page/talks/" title="说说"
+                  
+                  
+                  
+                    active-action="action-pagetalks"
+                  >
+                  <i class='fa-light fa-comment-lines PETERRIVE fa-fw'></i>说说
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://music.vayfou.cn" title="音乐"
+                  
+                  
+                  
+                    active-action="action-https:musicvayfoucn"
+                  >
+                  <i class='fa-light fa-music ALIZARIN fa-fw'></i>音乐
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                  title="更多"
                   
                   
@@ -3253,7 +3245,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-pageinfo"
                   >
-                  <i class='fa-light fa-object-group NEPHRITIS fa-fw'></i>留言板
+                  <i class='fa-light fa-comment-alt-smile NEPHRITIS fa-fw'></i>留言板
                 </a>
                 
               </li>
@@ -3393,7 +3385,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='duotone'>
+    <div class='meta-v3' line_style='light'>
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2024-10-03T13:59:03+08:00">2024-10-03</time>
@@ -3407,9 +3399,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
       </div>
-      
+        
+            <div>
+                <!-- <a class='readmore' href='/26d0eb49/'>
+            <i class='fa-light fa-books'></i> 阅读更多
+          </a> -->
+                <a class="link-fx-1 color-contrast-higher" href="/26d0eb49/">
+                    <span><i class='fa-light fa-books'></i> 阅读更多</span>
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"/><line x1="10" y1="18" x2="16" y2="12"/><line x1="16" y1="12" x2="22" y2="18" /></g></svg>
+                </a>
+            </div>
+        
     </div>
-  
+    
 
 </div>
 
@@ -3450,7 +3452,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='duotone'>
+    <div class='meta-v3' line_style='light'>
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2024-04-20T15:32:55+08:00">2024-04-20</time>
@@ -3464,9 +3466,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
       </div>
-      
+        
+            <div>
+                <!-- <a class='readmore' href='/d342eda4/'>
+            <i class='fa-light fa-books'></i> 阅读更多
+          </a> -->
+                <a class="link-fx-1 color-contrast-higher" href="/d342eda4/">
+                    <span><i class='fa-light fa-books'></i> 阅读更多</span>
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"/><line x1="10" y1="18" x2="16" y2="12"/><line x1="16" y1="12" x2="22" y2="18" /></g></svg>
+                </a>
+            </div>
+        
     </div>
-  
+    
 
 </div>
 
@@ -3505,7 +3517,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='duotone'>
+    <div class='meta-v3' line_style='light'>
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2024-04-14T05:47:49+08:00">2024-04-14</time>
@@ -3519,9 +3531,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
       </div>
-      
+        
+            <div>
+                <!-- <a class='readmore' href='/9d3d3152/'>
+            <i class='fa-light fa-books'></i> 阅读更多
+          </a> -->
+                <a class="link-fx-1 color-contrast-higher" href="/9d3d3152/">
+                    <span><i class='fa-light fa-books'></i> 阅读更多</span>
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"/><line x1="10" y1="18" x2="16" y2="12"/><line x1="16" y1="12" x2="22" y2="18" /></g></svg>
+                </a>
+            </div>
+        
     </div>
-  
+    
 
 </div>
 
@@ -3560,7 +3582,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='duotone'>
+    <div class='meta-v3' line_style='light'>
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2024-03-24T08:29:29+08:00">2024-03-24</time>
@@ -3574,9 +3596,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
       </div>
-      
+        
+            <div>
+                <!-- <a class='readmore' href='/af7317c9/'>
+            <i class='fa-light fa-books'></i> 阅读更多
+          </a> -->
+                <a class="link-fx-1 color-contrast-higher" href="/af7317c9/">
+                    <span><i class='fa-light fa-books'></i> 阅读更多</span>
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"/><line x1="10" y1="18" x2="16" y2="12"/><line x1="16" y1="12" x2="22" y2="18" /></g></svg>
+                </a>
+            </div>
+        
     </div>
-  
+    
 
 </div>
 
@@ -3615,7 +3647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   
-    <div class='meta-v3' line_style='duotone'>
+    <div class='meta-v3' line_style='light'>
       <div>
         
         <time itemprop="dateCreated datePublished" datetime="2023-01-01T12:55:38+08:00">2023-01-01</time>
@@ -3629,9 +3661,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
       </div>
-      
+        
+            <div>
+                <!-- <a class='readmore' href='/1006cd9b/'>
+            <i class='fa-light fa-books'></i> 阅读更多
+          </a> -->
+                <a class="link-fx-1 color-contrast-higher" href="/1006cd9b/">
+                    <span><i class='fa-light fa-books'></i> 阅读更多</span>
+                    <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="15.5"/><line x1="10" y1="18" x2="16" y2="12"/><line x1="16" y1="12" x2="22" y2="18" /></g></svg>
+                </a>
+            </div>
+        
     </div>
-  
+    
 
 </div>
 
@@ -3653,67 +3695,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop ">
+<section class="widget text desktop">
+  
+  <header>
+    
+      <i class="fa-light fa-ghost PETERRIVE fa-fw" aria-hidden="true"></i><span class='name'>公共信息</span>
+    
+  </header>
+
+
   <div class='content'>
     
-      
-        <a class='avatar flat-box circle' href='/page/about/'>
-          <img no-lazy src='/asset/img/avatar.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>VAYFOU</h2>
-        
-        
-          <p>Stay Hungry, Stay Foolish.</p>
+      <p>欢迎访问，祝您身心愉悦。<br>本站托管于 Vercel。</p>
 
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/talefou"
-              class="social fa-brands fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/page/atom/"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/page/timeline/"
-              class="social fa-solid fa-history flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://status.dusays.com/status/vayfou"
-              class="social fa-solid fa-eye flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
     
   </div>
 </section>
@@ -3729,14 +3723,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <header>
     
-      <i class="fa-light fa-bullhorn AMETHYST fa-fw" aria-hidden="true"></i><span class='name'>公告</span>
+      <i class="fa-light fa-wrench SUNFLOWER fa-fw" aria-hidden="true"></i><span class='name'>更新日志</span>
     
   </header>
 
 
   <div class='content'>
     
-      <p>本站默认替换了右键菜单，唤醒原系统菜单：<kbd>Ctrl</kbd> + <kbd>右键</kbd> 。</p>
+      <p>1.修改主题样式<br>2.Twikoo 评论样式替换<br>3.更新笔记页面</p>
 
     
   </div>
@@ -3753,7 +3747,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <header>
     
-      <i class="fa-light fa-map-signs PETERRIVE fa-fw" aria-hidden="true"></i><span class='name'>导航</span>
+      <i class="fa-light fa-map-signs POMEGRANATE fa-fw" aria-hidden="true"></i><span class='name'>站内导航</span>
     
   </header>
 
@@ -3768,17 +3762,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             <i class="fa-light fa-books TURQUOISE fa-fw" aria-hidden="true"></i>
           
-          笔记
+          文档笔记
         </a>
       
-        <a class="flat-box" href="/page/friends/"
+        <a class="flat-box" href="/page/about/"
           
           
-          active-action="action-pagefriends">
+          active-action="action-pageabout">
           
-            <i class="fa-light fa-link EMERALD fa-fw" aria-hidden="true"></i>
+            <i class="fa-light fa-compass-drafting NEPHRITIS fa-fw" aria-hidden="true"></i>
           
-          友情链接
+          关于本站
+        </a>
+      
+        <a class="flat-box" href="/page/timeline/"
+          
+          
+          active-action="action-pagetimeline">
+          
+            <i class="fa-light fa-history POMEGRANATE fa-fw" aria-hidden="true"></i>
+          
+          建站历史
         </a>
       
         <a class="flat-box" href="/page/info/"
@@ -3786,29 +3790,29 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           active-action="action-pageinfo">
           
-            <i class="fa-light fa-object-group PETERRIVE fa-fw" aria-hidden="true"></i>
+            <i class="fa-light fa-comment-alt-smile WISTERIA fa-fw" aria-hidden="true"></i>
           
-          留言板
+          站内留言
         </a>
       
-        <a class="flat-box" href="/page/openai-proxy/"
+        <a class="flat-box" href="/page/friends/"
           
           
-          active-action="action-pageopenai-proxy">
+          active-action="action-pagefriends">
           
-            <i class="fa-light fa-robot PETERRIVE fa-fw" aria-hidden="true"></i>
+            <i class="fa-light fa-stamp CONCRETE fa-fw" aria-hidden="true"></i>
           
-          OpenAI代理
+          小伙伴们
         </a>
       
-        <a class="flat-box" href="/random/"
+        <a class="flat-box" href="/page/atom/"
           
           
-          active-action="action-random">
+          active-action="action-pageatom">
           
-            <i class="fa-light fa-paper-plane SUNFLOWER fa-fw" aria-hidden="true"></i>
+            <i class="fa-light fa-rss PETERRIVE fa-fw" aria-hidden="true"></i>
           
-          随机文章
+          文章订阅
         </a>
       
     </div>
@@ -4176,7 +4180,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <li class="menuLoad-Content">
     <a class="vlts-menu fix-cursor-default" id="about" href="/page/about/" data-group="link">
-      <i class="fa-light fa-gingerbread-man ALIZARIN fa-fw"></i>
+      <i class="fa-light fa-compass-drafting ALIZARIN fa-fw"></i>
       关于我
     </a>
   </li>

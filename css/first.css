@@ -1120,20 +1120,6 @@ button {
 .l_header #wrapper .nav-main .title img {
   height: 64px;
 }
-@media screen and (max-width: 500px) {
-  .l_header #wrapper .nav-main .title img {
-    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-    display: none;
-  }
-}
-@media screen and (min-width: 500px) {
-  .l_header #wrapper .nav-main .title span {
-    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-    display: none;
-  }
-}
 .l_header .nav-sub {
   max-width: 1080px;
   margin: auto;
@@ -1836,5 +1822,13 @@ ul.list-v >li>a:hover {
 @media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
   .l_header .m_search {
     background: var(--color-site-bg) !important;
+  }
+}
+@media screen and (max-width: 2048px) {
+  .l_header {
+    left: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    max-width: 100% !important;
   }
 }
