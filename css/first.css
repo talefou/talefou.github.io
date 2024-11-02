@@ -487,7 +487,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "JiangxiZK", "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -991,8 +991,8 @@ button {
   font-display: swap;
 }
 @font-face {
-  font-family: 'LXGW WenKai Screen';
-  src: url("");
+  font-family: 'JiangxiZK';
+  src: url("/asset/storage/JiangxiZK.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1115,7 +1115,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: "JiangxiZK", "LXGW WenKai Screen", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
