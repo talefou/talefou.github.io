@@ -1824,11 +1824,3 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
-@media screen and (max-width: 2048px) {
-  .l_header {
-    left: 0 !important;
-    border-radius: 0 !important;
-    -webkit-border-radius: 0 !important;
-    max-width: 100% !important;
-  }
-}
