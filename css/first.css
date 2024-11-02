@@ -992,7 +992,7 @@ button {
 }
 @font-face {
   font-family: 'JiangxiZK';
-  src: url("/asset/storage/JiangxiZK.ttf");
+  src: url("https://static.vayfou.cn/storage/JiangxiZK/JiangxiZK.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
