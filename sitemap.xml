@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vayfou.cn/categories/</loc>
+    <loc>https://vayfou.cn/tags/</loc>
     
     <lastmod>2024-11-03</lastmod>
     
@@ -20,7 +20,16 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/</loc>
+    <loc>https://vayfou.cn/page/talks/</loc>
+    
+    <lastmod>2024-11-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/categories/</loc>
     
     <lastmod>2024-11-03</lastmod>
     
@@ -120,15 +129,6 @@
   
   <url>
     <loc>https://vayfou.cn/page/support/</loc>
-    
-    <lastmod>2024-11-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/talks/</loc>
     
     <lastmod>2024-11-03</lastmod>
     
