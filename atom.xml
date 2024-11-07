@@ -81,9 +81,9 @@
     <category term="博客" scheme="https://vayfou.cn/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
-    <category term="GitHub" scheme="https://vayfou.cn/tags/GitHub/"/>
-    
     <category term="Cloudflare" scheme="https://vayfou.cn/tags/Cloudflare/"/>
+    
+    <category term="GitHub" scheme="https://vayfou.cn/tags/GitHub/"/>
     
   </entry>
   
@@ -104,9 +104,9 @@
     <category term="教程" scheme="https://vayfou.cn/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="Hexo" scheme="https://vayfou.cn/tags/Hexo/"/>
-    
     <category term="GitHub" scheme="https://vayfou.cn/tags/GitHub/"/>
+    
+    <category term="Hexo" scheme="https://vayfou.cn/tags/Hexo/"/>
     
   </entry>
   
