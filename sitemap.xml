@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vayfou.cn/categories/</loc>
+    
+    <lastmod>2024-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/tags/</loc>
     
     <lastmod>2024-11-20</lastmod>
@@ -20,33 +29,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/timeline/</loc>
-    
-    <lastmod>2024-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/wechat/</loc>
-    
-    <lastmod>2024-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/categories/</loc>
-    
-    <lastmod>2024-11-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/about/</loc>
     
     <lastmod>2024-11-20</lastmod>
@@ -57,6 +39,15 @@
   
   <url>
     <loc>https://vayfou.cn/page/atom/</loc>
+    
+    <lastmod>2024-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/charlie-ix/</loc>
     
     <lastmod>2024-11-20</lastmod>
     
@@ -147,6 +138,24 @@
   
   <url>
     <loc>https://vayfou.cn/page/talks/</loc>
+    
+    <lastmod>2024-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/timeline/</loc>
+    
+    <lastmod>2024-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/wechat/</loc>
     
     <lastmod>2024-11-20</lastmod>
     
