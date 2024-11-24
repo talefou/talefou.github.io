@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "rewrites": [
+  "trailingSlash": true,
+  "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404/" }
-  ],
-  "headers": [
-    {
-      "source": "(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=86400, max-age=86400"
-        }
-      ]
-    }
   ]
 }
