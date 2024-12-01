@@ -8,7 +8,7 @@ backend:
 media_folder: "source/asset/img"
 public_folder: "/asset/img"
 site_url: "https://vayfou.cn"
-logo_url: "/asset/img/vayfou.png"
+logo_url: "https://cdn.vayfou.cn/img/vayfou.png"
 locale: "zh_Hans"
 common_col_conf: &common_col_conf
   create: true
@@ -54,6 +54,8 @@ common_col_conf: &common_col_conf
         - "Cloudflare"
         - "Vercel"
         - "CDN"
+        - "WeChat"
+        - "Life"
     - label: "分类"
       name: "categories"
       widget: "select"
