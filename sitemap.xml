@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vayfou.cn/categories/</loc>
+    
+    <lastmod>2024-12-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/tags/</loc>
     
     <lastmod>2024-12-08</lastmod>
@@ -164,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/categories/</loc>
+    <loc>https://vayfou.cn/eb44505a/</loc>
     
     <lastmod>2024-12-08</lastmod>
     
@@ -271,6 +280,13 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/tags/VayuRhythm/</loc>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/tags/Hexo/</loc>
     <lastmod>2024-12-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -295,6 +311,13 @@
   
   <url>
     <loc>https://vayfou.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/categories/%E8%B5%84%E6%96%99/</loc>
     <lastmod>2024-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
