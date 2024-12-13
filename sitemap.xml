@@ -20,6 +20,33 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/links/</loc>
+    
+    <lastmod>2024-12-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/memos/</loc>
+    
+    <lastmod>2024-12-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/notes/</loc>
+    
+    <lastmod>2024-12-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/photos/</loc>
     
     <lastmod>2024-12-13</lastmod>
@@ -83,6 +110,15 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/notes/grammar/</loc>
+    
+    <lastmod>2024-12-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/categories/</loc>
     
     <lastmod>2024-12-13</lastmod>
@@ -129,42 +165,6 @@
   
   <url>
     <loc>https://vayfou.cn/page/info/</loc>
-    
-    <lastmod>2024-12-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/links/</loc>
-    
-    <lastmod>2024-12-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/memos/</loc>
-    
-    <lastmod>2024-12-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/notes/</loc>
-    
-    <lastmod>2024-12-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/notes/grammar/</loc>
     
     <lastmod>2024-12-13</lastmod>
     
