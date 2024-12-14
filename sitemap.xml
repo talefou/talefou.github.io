@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vayfou.cn/tags/</loc>
-    
-    <lastmod>2024-12-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/welcome/</loc>
     
     <lastmod>2024-12-14</lastmod>
@@ -20,25 +11,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/wechat/</loc>
-    
-    <lastmod>2024-12-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/fcircle/</loc>
-    
-    <lastmod>2024-12-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/atom/</loc>
+    <loc>https://vayfou.cn/tags/</loc>
     
     <lastmod>2024-12-14</lastmod>
     
@@ -146,6 +119,15 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/wechat/</loc>
+    
+    <lastmod>2024-12-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/notes/grammar/</loc>
     
     <lastmod>2024-12-14</lastmod>
@@ -165,6 +147,24 @@
   
   <url>
     <loc>https://vayfou.cn/page/about/</loc>
+    
+    <lastmod>2024-12-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/atom/</loc>
+    
+    <lastmod>2024-12-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/fcircle/</loc>
     
     <lastmod>2024-12-14</lastmod>
     
