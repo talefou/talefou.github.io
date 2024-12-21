@@ -1,9 +1,9 @@
 {
     "orientation": "any",
     "lang": "zh-cn",
-    "name": "VAYFOU的小破站",
+    "name": "VayFou的小破站",
     "short_name": "VAYFOU",
-    "description": "去追风，去看世界，去做自己。",
+    "description": "流年笑掷，未来可期。",
     "start_url": "/",
     "icons": [
       {
@@ -21,7 +21,7 @@
       {
         "name": "关于",
         "short_name": "关于",
-        "description": "去追风，去看世界，去做自己。",
+        "description": "流年笑掷，未来可期。",
         "url": "/page/about/",
         "icons": [
           {
