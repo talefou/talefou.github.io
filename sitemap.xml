@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vayfou.cn/tags/</loc>
-    
-    <lastmod>2025-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/welcome/</loc>
     
     <lastmod>2025-01-03</lastmod>
@@ -20,7 +11,34 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/wechat/</loc>
+    <loc>https://vayfou.cn/tags/</loc>
+    
+    <lastmod>2025-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/friends/</loc>
+    
+    <lastmod>2025-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/history/</loc>
+    
+    <lastmod>2025-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/info/</loc>
     
     <lastmod>2025-01-03</lastmod>
     
@@ -65,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/support/</loc>
+    <loc>https://vayfou.cn/page/policy/</loc>
     
     <lastmod>2025-01-03</lastmod>
     
@@ -74,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/policy/</loc>
+    <loc>https://vayfou.cn/page/support/</loc>
     
     <lastmod>2025-01-03</lastmod>
     
@@ -93,6 +111,15 @@
   
   <url>
     <loc>https://vayfou.cn/page/timeline/</loc>
+    
+    <lastmod>2025-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/wechat/</loc>
     
     <lastmod>2025-01-03</lastmod>
     
@@ -138,24 +165,6 @@
   
   <url>
     <loc>https://vayfou.cn/page/fcircle/</loc>
-    
-    <lastmod>2025-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/friends/</loc>
-    
-    <lastmod>2025-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/info/</loc>
     
     <lastmod>2025-01-03</lastmod>
     
