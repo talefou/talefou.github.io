@@ -20,78 +20,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/photos/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/policy/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/support/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/talks/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/timeline/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/wechat/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/about/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/atom/</loc>
-    
-    <lastmod>2025-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/fcircle/</loc>
     
     <lastmod>2025-01-04</lastmod>
@@ -155,6 +83,60 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/photos/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/policy/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/support/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/talks/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/timeline/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/wechat/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/notes/grammar/</loc>
     
     <lastmod>2025-01-04</lastmod>
@@ -165,6 +147,24 @@
   
   <url>
     <loc>https://vayfou.cn/categories/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/about/</loc>
+    
+    <lastmod>2025-01-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/atom/</loc>
     
     <lastmod>2025-01-04</lastmod>
     
@@ -250,14 +250,14 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/Hexo/</loc>
+    <loc>https://vayfou.cn/tags/Cloudflare/</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://vayfou.cn/tags/Cloudflare/</loc>
+    <loc>https://vayfou.cn/tags/Hexo/</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -287,14 +287,14 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://vayfou.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://vayfou.cn/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://vayfou.cn/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-01-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
