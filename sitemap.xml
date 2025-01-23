@@ -20,34 +20,34 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/support/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/talks/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/timeline/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/wechat/</loc>
+    
+    <lastmod>2025-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/atom/</loc>
+    
+    <lastmod>2025-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/fcircle/</loc>
+    
+    <lastmod>2025-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/friends/</loc>
     
     <lastmod>2025-01-23</lastmod>
     
@@ -110,7 +110,34 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/server/</loc>
+    <loc>https://vayfou.cn/page/service/</loc>
+    
+    <lastmod>2025-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/support/</loc>
+    
+    <lastmod>2025-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/talks/</loc>
+    
+    <lastmod>2025-01-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/timeline/</loc>
     
     <lastmod>2025-01-23</lastmod>
     
@@ -128,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/server/openai-proxy/</loc>
+    <loc>https://vayfou.cn/page/service/openai-proxy/</loc>
     
     <lastmod>2025-01-23</lastmod>
     
@@ -147,33 +174,6 @@
   
   <url>
     <loc>https://vayfou.cn/page/about/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/atom/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/fcircle/</loc>
-    
-    <lastmod>2025-01-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/friends/</loc>
     
     <lastmod>2025-01-23</lastmod>
     
