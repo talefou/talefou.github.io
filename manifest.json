@@ -2,8 +2,8 @@
     "orientation": "any",
     "lang": "zh-cn",
     "name": "VayFou的小破站",
-    "short_name": "VaYou",
-    "description": "流年笑掷，未来可期。",
+    "short_name": "VayFou",
+    "description": "往者已矣，来者可追。",
     "start_url": "/",
     "icons": [
       {
@@ -21,7 +21,7 @@
       {
         "name": "关于",
         "short_name": "关于",
-        "description": "流年笑掷，未来可期。",
+        "description": "往者已矣，来者可追。",
         "url": "/page/about/",
         "icons": [
           {
