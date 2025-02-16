@@ -1,2 +1,3 @@
-User-Agent: *
-Allow: /sitemap.xml
+# robots.txt https://vayfou.cn
+User-agent: *
+Sitemap: http://vayfou.cn/sitemap.xml
