@@ -3,7 +3,7 @@
     "lang": "zh-cn",
     "name": "VayFou的小破站",
     "short_name": "VayFou",
-    "description": "往者已矣，来者可追。",
+    "description": "流年笑掷，未来可期。",
     "start_url": "/",
     "icons": [
       {
@@ -21,7 +21,7 @@
       {
         "name": "关于",
         "short_name": "关于",
-        "description": "往者已矣，来者可追。",
+        "description": "流年笑掷，未来可期。",
         "url": "/page/about/",
         "icons": [
           {
