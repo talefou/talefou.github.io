@@ -1,6 +1,8 @@
 {
   "name": "VayFou",
   "short_name": "VayFou",
+  "description": "往者已矣，来者可追。",
+  "start_url": "/",
   "icons": [
     {
       "src": "/asset/icon/web-app-manifest-192x192.png",
