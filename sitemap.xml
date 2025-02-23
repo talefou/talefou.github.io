@@ -11,24 +11,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/service/</loc>
-    
-    <lastmod>2025-02-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/support/</loc>
-    
-    <lastmod>2025-02-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/talks/</loc>
     
     <lastmod>2025-02-23</lastmod>
@@ -48,15 +30,6 @@
   
   <url>
     <loc>https://vayfou.cn/page/wechat/</loc>
-    
-    <lastmod>2025-02-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/service/openai-proxy/</loc>
     
     <lastmod>2025-02-23</lastmod>
     
@@ -146,7 +119,34 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/service/</loc>
+    
+    <lastmod>2025-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/support/</loc>
+    
+    <lastmod>2025-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/notes/grammar/</loc>
+    
+    <lastmod>2025-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/service/openai-proxy/</loc>
     
     <lastmod>2025-02-23</lastmod>
     
