@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>VayFou的小破站</title>
+  <title>vayfou的小破站</title>
   
   <subtitle>流年笑掷，未来可期。</subtitle>
   <link href="https://vayfou.cn/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://vayfou.cn/</id>
   
   <author>
-    <name>VayFou</name>
+    <name>vayfou</name>
     
   </author>
   
