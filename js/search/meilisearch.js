@@ -2,15 +2,15 @@ let SearchService=(()=>{let s={queryText:null},i,l,r;return s.template=`<div id=
   <div class="modal">
     <header class="modal-header" class="clearfix">
       <button type="submit" id="u-search-modal-btn-submit" class="u-search-btn-submit">
-        <span class="fa-solid fa-search"></span>
+        <span class="fa-light fa-search"></span>
       </button>
       <div id="meilisearch-search-input"></div>
-      <a id="u-search-btn-close" class="btn-close"> <span class="fa-solid fa-times"></span> </a>
+      <a id="u-search-btn-close" class="btn-close"> <span class="fa-light fa-times"></span> </a>
     </header>
     <main class="modal-body">
       <div id="meilisearch-search-results">
         <div id="meilisearch-hits">
-          <div class="search-icon"><i class="fa-sharp fa-solid fa-telescope"></i></i></div>
+          <div class="search-icon"><i class="fa-sharp fa-light fa-telescope"></i></i></div>
         </div>
       </div>
     </main>
@@ -32,4 +32,4 @@ let SearchService=(()=>{let s={queryText:null},i,l,r;return s.template=`<div id=
             <a href="${a}${t}" class="result">
             <span class="title">${e.title.value||"no-title"}</span>
             <span class="digest">${i}</span>
-            </a>`},empty:function(e){return`<div id="resule-hits-empty"><i class="fa-solid fa-box-open"></i><p>${volantis.GLOBAL_CONFIG.languages.search.hits_empty.replace(/\$\{query}/,e.query)}</p></div>`}}}),a=instantsearch.widgets.stats({container:"#meilisearch-info > .meilisearch-stats",templates:{text:function(e){return""+volantis.GLOBAL_CONFIG.languages.search.hits_stats.replace(/\$\{hits}/,e.nbHits).replace(/\$\{time}/,e.processingTimeMS)}}});i.addWidgets([e,t,a]),i.start()},s.setQueryText=e=>{s.queryText=e,i||s.init(),i?.setUiState({[l.indexName]:{query:e}})},s.search=()=>{document.querySelector("#u-search").style.display="block",document.addEventListener("keydown",e=>{"Escape"===e.code&&s.close()},{once:!0})},s.onSubmit=e=>{e.preventDefault();var t=e.target.querySelector(".u-search-input");s.setQueryText((t?.value?t:e.target).value),s.search()},s.cutContent=e=>{if(""===e)return"";var t=e.indexOf("<mark>");let a=t-30,i=t+120,s="",l="";return a<=0?(a=0,i=140):s="...",i>e.length?i=e.length:l="...",s+e.substring(a,i)+l},s.close=()=>{document.querySelector("#u-search").style.display="none"},{init:s.init,setQueryText:e=>{s.setQueryText(e)},search:s.search,close:s.close}})();Object.freeze(SearchService),SearchService.init();
+            </a>`},empty:function(e){return`<div id="resule-hits-empty"><i class="fa-light fa-box-open"></i><p>${volantis.GLOBAL_CONFIG.languages.search.hits_empty.replace(/\$\{query}/,e.query)}</p></div>`}}}),a=instantsearch.widgets.stats({container:"#meilisearch-info > .meilisearch-stats",templates:{text:function(e){return""+volantis.GLOBAL_CONFIG.languages.search.hits_stats.replace(/\$\{hits}/,e.nbHits).replace(/\$\{time}/,e.processingTimeMS)}}});i.addWidgets([e,t,a]),i.start()},s.setQueryText=e=>{s.queryText=e,i||s.init(),i?.setUiState({[l.indexName]:{query:e}})},s.search=()=>{document.querySelector("#u-search").style.display="block",document.addEventListener("keydown",e=>{"Escape"===e.code&&s.close()},{once:!0})},s.onSubmit=e=>{e.preventDefault();var t=e.target.querySelector(".u-search-input");s.setQueryText((t?.value?t:e.target).value),s.search()},s.cutContent=e=>{if(""===e)return"";var t=e.indexOf("<mark>");let a=t-30,i=t+120,s="",l="";return a<=0?(a=0,i=140):s="...",i>e.length?i=e.length:l="...",s+e.substring(a,i)+l},s.close=()=>{document.querySelector("#u-search").style.display="none"},{init:s.init,setQueryText:e=>{s.setQueryText(e)},search:s.search,close:s.close}})();Object.freeze(SearchService),SearchService.init();
