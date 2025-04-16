@@ -20,15 +20,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/photos/index.html</loc>
-    
-    <lastmod>2025-04-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/service/index.html</loc>
     
     <lastmod>2025-04-16</lastmod>
@@ -138,6 +129,15 @@
   
   <url>
     <loc>https://vayfou.cn/page/official-account/index.html</loc>
+    
+    <lastmod>2025-04-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/photos/index.html</loc>
     
     <lastmod>2025-04-16</lastmod>
     
