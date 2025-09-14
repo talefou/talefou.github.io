@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/friends/index.html</loc>
-    
-    <lastmod>2025-09-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/info/index.html</loc>
     
     <lastmod>2025-09-14</lastmod>
@@ -147,6 +138,15 @@
   
   <url>
     <loc>https://vayfou.cn/page/fcircle/index.html</loc>
+    
+    <lastmod>2025-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/friends/index.html</loc>
     
     <lastmod>2025-09-14</lastmod>
     
