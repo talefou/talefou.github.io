@@ -11,52 +11,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/notes/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/official-account/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/photos/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/service/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/policy/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/support/index.html</loc>
     
     <lastmod>2025-09-20</lastmod>
     
@@ -74,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://vayfou.cn/page/support/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vayfou.cn/page/timeline/index.html</loc>
     
     <lastmod>2025-09-20</lastmod>
@@ -83,43 +47,7 @@
   </url>
   
   <url>
-    <loc>https://vayfou.cn/page/notes/grammar/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vayfou.cn/page/service/openai-proxy/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/categories/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/about/index.html</loc>
-    
-    <lastmod>2025-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/page/atom/index.html</loc>
     
     <lastmod>2025-09-20</lastmod>
     
@@ -147,6 +75,78 @@
   
   <url>
     <loc>https://vayfou.cn/page/info/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/notes/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/official-account/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/policy/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/photos/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/notes/grammar/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/categories/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/atom/index.html</loc>
+    
+    <lastmod>2025-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/page/about/index.html</loc>
     
     <lastmod>2025-09-20</lastmod>
     
