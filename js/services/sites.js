@@ -1,0 +1,1 @@
+utils.jq(()=>{$(function(){for(var a=document.getElementsByClassName("ds-sites"),l=0;l<a.length;l++){let t=a[l],e=t.getAttribute("api");if(null!=e)def.avatar}})});
