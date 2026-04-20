@@ -1,1 +1,42 @@
-function setCardLink(e){(e="forEach"in(e||{})?e:document.querySelectorAll("a[cardlink]")).forEach(n=>{if(1===n.nodeType){n.removeAttribute("cardlink");let e=n.getAttribute("api");var t;null!=e&&(t=n.hasAttribute("lazyload"),util.viewportLazyload(n,()=>{fetch(e).then(function(e){if(e.ok)return e.json();throw new Error("Network response was not ok.")}).then(function(e){var t=[],i=n.getAttribute("autofill"),i=(i&&(t=i.split(",")),e.title&&0<e.title.length&&t.includes("title")&&(n.querySelector(".title").innerHTML=e.title,n.title=e.title),e.icon&&0<e.icon.length&&t.includes("icon")&&(n.querySelector(".img").style='background-image: url("'+e.icon+'");',n.querySelector(".img").setAttribute("data-bg",e.icon)),n.querySelector(".desc"));i&&e.desc&&0<e.desc.length&&t.includes("desc")&&(i.innerHTML=e.desc)}).catch(function(e){console.error(e)})},t))}})}
+// 本插件由CardLink定制而成，原项目源码: https://github.com/Lete114/CardLink
+function setCardLink(nodes) {
+  // If the `nodes` do not contain a `forEach` method, then the default `a[cardlink]` is used
+  nodes = 'forEach' in (nodes || {}) ? nodes : document.querySelectorAll('a[cardlink]')
+  nodes.forEach((el) => {
+    // If it is not a tag element then it is not processed
+    if (el.nodeType !== 1) return;
+    el.removeAttribute('cardlink');
+    const api = el.getAttribute('api');
+    if (api == null) return;
+    const loadData = () => {
+      fetch(api).then(function(response) {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Network response was not ok.');
+      }).then(function(data) {
+        var autofill = [];
+        const autofillStr = el.getAttribute('autofill');
+        if (autofillStr) {
+          autofill = autofillStr.split(',');
+        }
+        if (data.title && data.title.length > 0 && autofill.includes('title')) {
+          el.querySelector('.title').innerHTML = data.title;
+          el.title = data.title;
+        }
+        if (data.icon && data.icon.length > 0 && autofill.includes('icon')) {
+          el.querySelector('.img').style = 'background-image: url("' + data.icon + '");';
+          el.querySelector('.img').setAttribute('data-bg', data.icon);
+        }
+        let desc = el.querySelector('.desc');
+        if (desc && data.desc && data.desc.length > 0 && autofill.includes('desc')) {
+          desc.innerHTML = data.desc;
+        }
+      }).catch(function(error) {
+        console.error(error);
+      });
+    }
+    const lazyload = el.hasAttribute('lazyload');
+    util.viewportLazyload(el, loadData, lazyload);
+  })
+}
