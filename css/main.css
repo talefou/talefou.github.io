@@ -7860,9 +7860,6 @@ div.swiper-slide img {
 .post-list .swiper:hover .swiper-button-next {
   display: flex;
 }
-.slide-up {
-  visibility: hidden;
-}
 img[data-fancybox],
 a[data-fancybox] {
   cursor: zoom-in;
