@@ -4,16 +4,7 @@
   <url>
     <loc>https://vayfou.cn/talk/index.html</loc>
     
-    <lastmod>2026-04-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/about/index.html</loc>
-    
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +13,25 @@
   <url>
     <loc>https://vayfou.cn/404/index.html</loc>
     
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/about/index.html</loc>
+    
+    <lastmod>2026-05-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/post/a3c9b331/</loc>
+    
+    <lastmod>2026-05-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +58,7 @@
 
   <url>
     <loc>https://vayfou.cn/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,21 +66,21 @@
   
   <url>
     <loc>https://vayfou.cn/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vayfou.cn/tags/%E6%97%85%E8%A1%8C/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vayfou.cn/tags/%E5%9B%9E%E5%BF%86/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vayfou.cn/tags/%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -80,14 +89,14 @@
   
   <url>
     <loc>https://vayfou.cn/categories/%E6%97%A5%E5%B8%B8%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vayfou.cn/categories/%E6%97%85%E8%A1%8C%E6%89%8B%E8%AE%B0/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
