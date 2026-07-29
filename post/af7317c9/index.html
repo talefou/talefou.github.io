@@ -3,9 +3,9 @@
 
   function load_twikoo() {
     if (!el) return;
-    utils.js('https://cdn.jsdelivr.net/npm/twikoo@1.7.11/dist/twikoo.min.js', {defer: true}).then(function () {
+    utils.js('https://cdn.jsdelivr.net/npm/twikoo@1.7.15/dist/twikoo.min.js', {defer: true}).then(function () {
       const path = el.getAttribute('comment_id') ?? decodeURI(window.location.pathname);
-      twikoo.init(Object.assign({"js":"https://cdn.jsdelivr.net/npm/twikoo@1.7.11/dist/twikoo.min.js","envId":"https://twikoo.vayfou.cn"}, {
+      twikoo.init(Object.assign({"js":"https://cdn.jsdelivr.net/npm/twikoo@1.7.15/dist/twikoo.min.js","envId":"https://twikoo.vayfou.cn"}, {
         el: '#twikoo_container',
         path: path,
       }));
